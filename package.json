@@ -1,0 +1,10 @@
+{
+  "name": "ruby2-rails5-bootstrap-heroku",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.4",
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
+}
