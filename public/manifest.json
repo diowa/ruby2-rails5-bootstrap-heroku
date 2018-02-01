@@ -1,0 +1,20 @@
+{
+  "short_name": "StarterApp",
+  "name": "Rails 5 Starter App",
+  "icons": [
+    {
+      "src": "launcher-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "launcher-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#e00000",
+  "display": "minimal-ui",
+  "start_url": ".",
+  "theme_color": "#e00000"
+}

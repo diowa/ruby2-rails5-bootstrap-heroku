@@ -1,0 +1,31 @@
+doctype html
+html lang=I18n.locale.to_s data-default-lang=I18n.default_locale
+  head
+    title= yield_or_default :title, action_name.titlecase
+
+    / Required meta tags
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'
+    meta name='description' content=yield(:meta_description)
+
+    = csrf_meta_tags
+    = yield :head
+
+    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+
+    / Web App manifest
+    link href='/manifest.json' rel='manifest'
+    meta content=t('app_name') name='Rails 5 Starter App'
+    meta content='#e00000' name='theme-color'
+
+    link href='launcher-icon-4x.png' rel='apple-touch-icon' sizes='180x180'
+
+    / Placed at the top of the document 'cause of turbolinks
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    == render 'shared/navbar'
+
+    .main-container.container= yield
+
+    == render 'shared/footer'
