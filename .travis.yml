@@ -1,0 +1,31 @@
+language: ruby
+sudo: false
+rvm:
+  - 2.5.1
+
+cache:
+  bundler: true
+  directories:
+    - node_modules
+    - travis_phantomjs
+  yarn: true
+
+env:
+  - RAILS_MASTER_KEY=b8cc3ac9ab8a3280b03af3d29b2e50ca
+
+before_install:
+  - gem update --system
+  - gem install bundler
+  - export PHANTOMJS_VERSION=2.1.1
+  - export PATH=$PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64/bin:$PATH
+  - if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then rm -rf $PWD/travis_phantomjs; mkdir -p $PWD/travis_phantomjs; fi
+  - if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then wget https://github.com/Medium/phantomjs/releases/download/v$PHANTOMJS_VERSION/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -O $PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2; fi
+  - if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then tar -xvf $PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -C $PWD/travis_phantomjs; fi
+  - phantomjs --version
+  - nvm install 10
+  - node -v
+  - npm i -g yarn@^1.7.0
+  - yarn -v
+
+before_script:
+  - psql -c 'create database "ruby2-rails5-bootstrap-heroku_test";' -U postgres

@@ -1,0 +1,36 @@
+require: rubocop-rspec
+
+AllCops:
+  DisplayCopNames: true
+  TargetRailsVersion: 5.2
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'bin/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/bundle/**/*'
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*'
+
+Rails:
+  Enabled: true
+
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/features/**/*'
+    - 'spec/requests/**/*'
+
+Style/Documentation:
+  Enabled: false

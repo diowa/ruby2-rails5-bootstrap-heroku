@@ -1,0 +1,19 @@
+- page_title t('app_name')
+- page_meta_description t('meta_description')
+
+h1.mt-3
+  = yield :title
+  small< 0.0.1
+ul.list-inline.lead
+  li.list-inline-item
+    | Ruby
+    small.text-muted< 2.5.1
+  li.list-inline-item
+    | Rails
+    small.text-muted< 5.2.0
+  li.list-inline-item
+    | Bootstrap
+    small.text-muted< 4.1.1
+  li.list-inline-item
+    | Font Awesome (SVG)
+    small.text-muted< 5.1.0-11

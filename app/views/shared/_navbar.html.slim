@@ -1,0 +1,8 @@
+nav.main-navbar.navbar.main-navbar.navbar-light.bg-light.navbar-expand-lg
+  .container
+    = link_to t('app_name'), root_path, class: 'navbar-brand'
+    button.navbar-toggler.navbar-toggler-right type='button' data-toggle='collapse' data-target='#main-navbar-collapse' aria-controls='main-navbar-collapse' aria-expanded='false' aria-label=t('.toggle_navigation')
+      span.navbar-toggler-icon
+    #main-navbar-collapse.collapse.navbar-collapse
+      ul.navbar-nav.main-navbar-nav.ml-auto
+        li.nav-item= link_to 'Hello World', hello_world_path, class: 'nav-link'
