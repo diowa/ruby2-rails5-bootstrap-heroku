@@ -4,29 +4,29 @@
 
 "@fortawesome/fontawesome-common-types@^0.2.0-6", "@fortawesome/fontawesome-common-types@^0.2.0-9":
   version "0.2.0-9"
-  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.0-9.tgz#96cfd9ff7bbc672c476e8566d653ec7495bb9a52"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.0-9.tgz#96cfd9ff7bbc672c476e8566d653ec7495bb9a52"
 
 "@fortawesome/fontawesome-svg-core@^1.2.0-11":
   version "1.2.0-11"
-  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.0-11.tgz#b8ee99b3a078f5253623a631a122ff60a6e5bb4c"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.0-11.tgz#b8ee99b3a078f5253623a631a122ff60a6e5bb4c"
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.0-6"
 
 "@fortawesome/free-brands-svg-icons@^5.1.0-11":
   version "5.1.0-11"
-  resolved "https://npm.fontawesome.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.1.0-11.tgz#9912f54452d59786e9abdb9710d36c3da9482032"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.1.0-11.tgz#9912f54452d59786e9abdb9710d36c3da9482032"
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.0-9"
 
 "@fortawesome/free-regular-svg-icons@^5.1.0-11":
   version "5.1.0-11"
-  resolved "https://npm.fontawesome.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.1.0-11.tgz#262c700987fd514547bbf5ecc3ebe47252a86c64"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.1.0-11.tgz#262c700987fd514547bbf5ecc3ebe47252a86c64"
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.0-9"
 
 "@fortawesome/free-solid-svg-icons@^5.1.0-11":
   version "5.1.0-11"
-  resolved "https://npm.fontawesome.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.1.0-11.tgz#4a346eaada93276edb133b140492e8d7cfa2aa47"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.1.0-11.tgz#4a346eaada93276edb133b140492e8d7cfa2aa47"
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.0-9"
 
