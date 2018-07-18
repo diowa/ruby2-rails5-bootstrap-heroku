@@ -16,10 +16,10 @@
     "Opera >= 30"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.0",
-    "@fortawesome/free-brands-svg-icons": "^5.1.0",
-    "@fortawesome/free-regular-svg-icons": "^5.1.0",
-    "@fortawesome/free-solid-svg-icons": "^5.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.1",
+    "@fortawesome/free-brands-svg-icons": "^5.1.1",
+    "@fortawesome/free-regular-svg-icons": "^5.1.1",
+    "@fortawesome/free-solid-svg-icons": "^5.1.1",
     "@rails/webpacker": "3.5",
     "actioncable": "^5.2.0",
     "bootstrap": "^4.1.2",
