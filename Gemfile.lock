@@ -138,7 +138,7 @@ GEM
     pry-rails (0.3.6)
       pry (>= 0.10.4)
     public_suffix (3.0.2)
-    puma (3.11.4)
+    puma (3.12.0)
     rack (2.0.5)
     rack-proxy (0.6.4)
       rack
@@ -285,7 +285,7 @@ DEPENDENCIES
   pry (~> 0.11.3)
   pry-byebug (~> 3.6)
   pry-rails (~> 0.3.6)
-  puma (~> 3.11)
+  puma (~> 3.12)
   rack-timeout (~> 0.5.1)
   rails (= 5.2.0)
   rspec-rails (~> 3.7)
