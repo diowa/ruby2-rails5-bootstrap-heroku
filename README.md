@@ -27,7 +27,7 @@ This is a starter web application based on the following technology stack:
 * [stylelint][14]
 
 [1]: https://www.ruby-lang.org/en/
-[2]: http://rubyonrails.org/
+[2]: https://rubyonrails.org/
 [3]: https://puma.io/
 [4]: https://www.postgresql.org/
 [5]: https://rspec.info/
