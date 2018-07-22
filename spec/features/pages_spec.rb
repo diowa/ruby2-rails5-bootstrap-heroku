@@ -7,7 +7,7 @@ RSpec.describe 'Pages' do
     it 'has application name in title' do
       visit root_path
 
-      expect(page).to have_title I18n.t('app_name')
+      expect(page).to have_title t('app_name')
     end
   end
 end
