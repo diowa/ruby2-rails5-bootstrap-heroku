@@ -2,33 +2,33 @@
 # yarn lockfile v1
 
 
-"@fortawesome/fontawesome-common-types@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.1.tgz#b919b31ab1b42cd2aadab5fa45934347c30ee316"
+"@fortawesome/fontawesome-common-types@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.2.tgz#7fd64eacf7f64e4d7619d21b0b2f2467f5a70611"
 
-"@fortawesome/fontawesome-svg-core@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.1.tgz#ae203b7563a8b6d7ebf8fe66253b92bd7a7a8a08"
+"@fortawesome/fontawesome-svg-core@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.2.tgz#b431e7efb3e3a1887e596daa6ed0d241d2d1aea5"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.1"
+    "@fortawesome/fontawesome-common-types" "^0.2.2"
 
-"@fortawesome/free-brands-svg-icons@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.1.1.tgz#395738a44de465a4d66e08c32da3ff640192f030"
+"@fortawesome/free-brands-svg-icons@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.2.0.tgz#1f49c423e704b31c5f36507e7c5cfcba6e5dfc9d"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.1"
+    "@fortawesome/fontawesome-common-types" "^0.2.2"
 
-"@fortawesome/free-regular-svg-icons@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.1.1.tgz#c73a91d3dfb19dd01f710d4a523a92fdcd09db9d"
+"@fortawesome/free-regular-svg-icons@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.2.0.tgz#6e96f19e349ac0d19b6758255c777f7331aeb40c"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.1"
+    "@fortawesome/fontawesome-common-types" "^0.2.2"
 
-"@fortawesome/free-solid-svg-icons@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.1.1.tgz#35ebdb374c48fbad4b1812fe20314422d729fc9d"
+"@fortawesome/free-solid-svg-icons@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.2.0.tgz#b51c1d49278ef538a97c0ce9575a1b54cc1a52dc"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.1"
+    "@fortawesome/fontawesome-common-types" "^0.2.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1144,9 +1144,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.2.tgz#aee2a93472e61c471fc79fb475531dcbc87de326"
+bootstrap@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.3.tgz#0eb371af2c8448e8c210411d0cb824a6409a12be"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -1386,8 +1386,8 @@ caniuse-api@^2.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000869"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000869.tgz#c3da59fa8d9456df88a24bb292ede0e3798798cb"
+  version "1.0.30000870"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000870.tgz#f397cd64922c24f85d0ce7803c9bd5c5a1571b16"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000864:
   version "1.0.30000865"
@@ -1701,8 +1701,8 @@ colors@1.0.3:
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
 
 colors@^1.1.2:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.0.tgz#5f20c9fef6945cb1134260aab33bfbdc8295e04e"
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.1.tgz#4accdb89cf2cabc7f982771925e9468784f32f3d"
 
 colors@~1.1.2:
   version "1.1.2"
@@ -4958,8 +4958,8 @@ npm-bundled@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.3.tgz#7e71703d973af3370a9591bafe3a63aca0be2308"
 
 npm-packlist@^1.1.6:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/npm-packlist/-/npm-packlist-1.1.10.tgz#1039db9e985727e464df066f4cf0ab6ef85c398a"
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/npm-packlist/-/npm-packlist-1.1.11.tgz#84e8c683cbe7867d34b1d357d893ce29e28a02de"
   dependencies:
     ignore-walk "^3.0.1"
     npm-bundled "^1.0.1"
@@ -7639,7 +7639,7 @@ unist-util-find-all-after@^1.0.2:
   dependencies:
     unist-util-is "^2.0.0"
 
-unist-util-is@^2.0.0, unist-util-is@^2.1.1:
+unist-util-is@^2.0.0, unist-util-is@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-2.1.2.tgz#1193fa8f2bfbbb82150633f3a8d2eb9a1c1d55db"
 
@@ -7659,11 +7659,17 @@ unist-util-stringify-position@^1.0.0, unist-util-stringify-position@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/unist-util-stringify-position/-/unist-util-stringify-position-1.1.2.tgz#3f37fcf351279dcbca7480ab5889bb8a832ee1c6"
 
-unist-util-visit@^1.1.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.3.1.tgz#c019ac9337a62486be58531bc27e7499ae7d55c7"
+unist-util-visit-parents@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/unist-util-visit-parents/-/unist-util-visit-parents-2.0.1.tgz#63fffc8929027bee04bfef7d2cce474f71cb6217"
   dependencies:
-    unist-util-is "^2.1.1"
+    unist-util-is "^2.1.2"
+
+unist-util-visit@^1.1.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.0.tgz#1cb763647186dc26f5e1df5db6bd1e48b3cc2fb1"
+  dependencies:
+    unist-util-visit-parents "^2.0.0"
 
 units-css@^0.4.0:
   version "0.4.0"
