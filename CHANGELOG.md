@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0 / 2018-07-24
+
+* [FEATURE] Update Bootstrap to 4.1.3
+* [FEATURE] Update Font Awesome to 5.2.0
+* [ENHANCEMENT] Update dependencies
+
 ## 1.2.0 / 2018-07-22
 
 * [FEATURE] Raise exceptions when translations are missing (development, test)
