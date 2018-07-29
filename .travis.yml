@@ -24,7 +24,7 @@ before_install:
   - phantomjs --version
   - nvm install 10
   - node -v
-  - npm i -g yarn@^1.7.0
+  - npm i -g yarn@^1.9.2
   - yarn -v
 
 before_script:
