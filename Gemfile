@@ -22,7 +22,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'slim-rails', '~> 3.1'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 5.2'
+gem 'newrelic_rpm', '~> 5.3'
 
 group :development, :test do
   gem 'byebug', '~> 10.0', platforms: %i[mri mingw x64_mingw]
@@ -50,9 +50,9 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.4'
+  gem 'capybara', '~> 3.5'
   gem 'capybara-screenshot', '~> 1.0'
-  gem 'coveralls_reborn', '~> 0.11.1', require: false
+  gem 'coveralls_reborn', '~> 0.12.0', require: false
   gem 'database_cleaner', '~> 1.7'
   gem 'email_spec', '~> 2.2'
   gem 'poltergeist', '~> 1.18'
