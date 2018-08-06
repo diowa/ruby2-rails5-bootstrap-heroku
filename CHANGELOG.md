@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 / 2018-08-06
+
+* [ENHANCEMENT] Update dependencies
+
 ## 1.3.1 / 2018-08-02
 
 * [ENHANCEMENT] Update dependencies
