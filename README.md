@@ -10,8 +10,8 @@
 This is a starter web application based on the following technology stack:
 
 * [Ruby 2.5.1][1]
-* [Rails 5.2.0][2]
-* [Webpack][15]
+* [Rails 5.2.1][2]
+* [Webpack 3][15]
 * [Yarn][16]
 * [Puma][3]
 * [PostgreSQL][4]
