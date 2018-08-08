@@ -19,6 +19,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  # Allow to use `t` instead of `I18n.t` in specs
   config.include AbstractController::Translation
 
   # rspec-expectations config goes here. You can use an alternate
