@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 / 2018-08-08
+
+* [FEATURE] Update Rails to 5.2.1
+* [ENHANCEMENT] Update dependencies
+
 ## 1.3.1 / 2018-08-06
 
 * [ENHANCEMENT] Update dependencies
