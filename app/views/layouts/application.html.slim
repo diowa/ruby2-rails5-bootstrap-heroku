@@ -1,7 +1,7 @@
 doctype html
 html lang=I18n.locale.to_s data-default-lang=I18n.default_locale
   head
-    title= yield_or_default :title, action_name.titlecase
+    title = yield_or_default :title, action_name.titlecase
 
     / Required meta tags
     meta charset='utf-8'
@@ -26,6 +26,6 @@ html lang=I18n.locale.to_s data-default-lang=I18n.default_locale
   body
     == render 'shared/navbar'
 
-    .main-container.container= yield
+    .main-container.container = yield
 
     == render 'shared/footer'
