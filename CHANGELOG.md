@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 / 2018-09-03
+
+* [FEATURE] Update Font Awesome to 5.3.1
+* [ENHANCEMENT] Update dependencies
+
 ## 1.4.0 / 2018-08-08
 
 * [FEATURE] Update Rails to 5.2.1
