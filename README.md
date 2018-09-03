@@ -19,7 +19,7 @@ This is a starter web application based on the following technology stack:
 * [PhantomJS][6] + [Poltergeist][7]
 * [Bootstrap 4.1.3][8]
 * [Autoprefixer][9]
-* [Font Awesome 5.2.0 SVG][10]
+* [Font Awesome 5.3.1 SVG][10]
 * [Slim][11]
 * [RuboCop][12]
 * [RuboCop RSpec][17]

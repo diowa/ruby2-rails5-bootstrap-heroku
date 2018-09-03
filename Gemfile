@@ -7,7 +7,7 @@ ruby '2.5.1'
 gem 'rails', '5.2.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.0'
+gem 'pg', '~> 1.1'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
@@ -26,15 +26,15 @@ gem 'newrelic_rpm', '~> 5.3'
 
 group :development, :test do
   gem 'byebug', '~> 10.0', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 4.10'
+  gem 'factory_bot_rails', '~> 4.11'
   gem 'faker', '~> 1.9'
   gem 'pry', '~> 0.11.3'
   gem 'pry-byebug', '~> 3.6'
   gem 'pry-rails', '~> 0.3.6'
   gem 'rspec-rails', '~> 3.8'
   gem 'rubocop', '~> 0.58.2', require: false
-  gem 'rubocop-rspec', '~> 1.27', require: false
-  gem 'slim_lint', '~> 0.15.1', require: false
+  gem 'rubocop-rspec', '~> 1.29', require: false
+  gem 'slim_lint', '~> 0.16.0', require: false
 end
 
 group :development do
@@ -46,11 +46,11 @@ group :development do
   gem 'spring', '~> 2.0'
   gem 'spring-commands-rspec', '~> 1.0'
   gem 'spring-watcher-listen', '~> 2.0'
-  gem 'web-console', '~> 3.6'
+  gem 'web-console', '~> 3.7'
 end
 
 group :test do
-  gem 'capybara', '~> 3.5'
+  gem 'capybara', '~> 3.7'
   gem 'capybara-screenshot', '~> 1.0'
   gem 'coveralls_reborn', '~> 0.12.0', require: false
   gem 'database_cleaner', '~> 1.7'
