@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.4.0 / 2018-09-03
+## 1.5.0 / 2018-09-03
 
 * [FEATURE] Update Font Awesome to 5.3.1
 * [ENHANCEMENT] Update dependencies
