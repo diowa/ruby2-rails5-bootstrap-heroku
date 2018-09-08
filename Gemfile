@@ -22,7 +22,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'slim-rails', '~> 3.1'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 5.3'
+gem 'newrelic_rpm', '~> 5.4'
 
 group :development, :test do
   gem 'byebug', '~> 10.0', platforms: %i[mri mingw x64_mingw]
@@ -32,7 +32,7 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.6'
   gem 'pry-rails', '~> 0.3.6'
   gem 'rspec-rails', '~> 3.8'
-  gem 'rubocop', '~> 0.58.2', require: false
+  gem 'rubocop', '~> 0.59.2', require: false
   gem 'rubocop-rspec', '~> 1.29', require: false
   gem 'slim_lint', '~> 0.16.0', require: false
 end
@@ -50,7 +50,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.7'
+  gem 'capybara', '~> 3.8'
   gem 'capybara-screenshot', '~> 1.0'
   gem 'coveralls_reborn', '~> 0.12.0', require: false
   gem 'database_cleaner', '~> 1.7'
