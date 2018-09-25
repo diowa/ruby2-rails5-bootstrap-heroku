@@ -30,6 +30,7 @@ RSpec/DescribeClass:
   Exclude:
     - 'spec/features/**/*'
     - 'spec/requests/**/*'
+    - 'spec/system/**/*'
 
 Style/Documentation:
   Enabled: false
