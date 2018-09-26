@@ -5,8 +5,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### Unstable - we are currently force pushing commits on master branch
-
 This is a starter web application based on the following technology stack:
 
 * [Ruby 2.5.1][1]
