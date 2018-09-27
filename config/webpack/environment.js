@@ -8,10 +8,7 @@ const findSassLoader  = loader => (loader === 'sass-loader' || loader.loader ===
 const sassLoaderIndex = sassLoader.use.findIndex(findSassLoader)
 
 sassLoader.use.splice(sassLoaderIndex, 0, {
-  loader: 'resolve-url-loader',
-  options: {
-    attempts: 1
-  }
+  loader: 'resolve-url-loader'
 })
 
 // Get a pre-configured plugin
