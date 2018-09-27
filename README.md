@@ -5,8 +5,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### Unstable - we are currently force pushing commits on master branch
-
 This is a starter web application based on the following technology stack:
 
 * [Ruby 2.5.1][1]
@@ -16,7 +14,6 @@ This is a starter web application based on the following technology stack:
 * [Puma][3]
 * [PostgreSQL][4]
 * [RSpec][5]
-* [PhantomJS][6] + [Poltergeist][7]
 * [Bootstrap 4.1.3][8]
 * [Autoprefixer][9]
 * [Font Awesome 5.3.1 SVG][10]
@@ -31,8 +28,6 @@ This is a starter web application based on the following technology stack:
 [3]: https://puma.io/
 [4]: https://www.postgresql.org/
 [5]: https://rspec.info/
-[6]: https://github.com/ariya/phantomjs/
-[7]: https://github.com/teampoltergeist/poltergeist
 [8]: https://getbootstrap.com/
 [9]: https://github.com/postcss/autoprefixer
 [10]: https://fontawesome.com/

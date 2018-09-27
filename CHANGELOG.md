@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0 / 2018-09-26
+
+* [FEATURE] Use system tests
+* [FEATURE] Use headless Chrome instead of PhantomJS
+* [ENHANCEMENT] Update dependencies
+
 ## 1.5.1 / 2018-09-04
 
 * [BUGFIX] Fix Changelog
