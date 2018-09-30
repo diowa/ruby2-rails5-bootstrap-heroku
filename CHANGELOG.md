@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1 / 2018-09-30
+
+* [ENHANCEMENT] Improve system tests
+* [ENHANCEMENT] Update dependencies
+
 ## 2.0.0 / 2018-09-26
 
 * [FEATURE] Use system tests
