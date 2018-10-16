@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.0 / 2018-10-16
+
+* [FEATURE] Update Font Awesome to 5.4.1
+* [ENHANCEMENT] Update dependencies
+
 ## 2.1.0 / 2018-10-09
 
 * [FEATURE] Update Font Awesome to 5.4.0
