@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.3.0 / 2018-10-20
+
+* [FEATURE] Ruby 2.5.3
+* [ENHANCEMENT] Update dependencies
+
 ## 2.2.0 / 2018-10-16
 
 * [FEATURE] Update Font Awesome to 5.4.1
