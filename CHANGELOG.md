@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.1 / 2018-10-20
+
+* [BUGFIX] Fix Travis build
+
 ## 2.3.0 / 2018-10-20
 
 * [FEATURE] Ruby 2.5.3
