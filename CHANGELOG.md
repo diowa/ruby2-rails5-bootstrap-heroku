@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.4.0 / 2018-10-25
+
+* [FEATURE] Node 11
+* [ENHANCEMENT] Update dependencies
+
 ## 2.3.2 / 2018-10-20
 
 * [BUGFIX] Fix Travis build
