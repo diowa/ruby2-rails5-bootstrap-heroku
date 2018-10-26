@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.5.0 / 2018-10-26
+
+* [FEATURE] Update Font Awesome to 5.4.2
+* [ENHANCEMENT] Update dependencies
+
 ## 2.4.0 / 2018-10-25
 
 * [FEATURE] Node 11
