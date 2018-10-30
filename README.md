@@ -9,7 +9,7 @@ This is a starter web application based on the following technology stack:
 
 * [Ruby 2.5.3][1]
 * [Rails 5.2.2][2]
-* [Webpack 3][15]
+* [Webpack 4][15]
 * [Yarn][16]
 * [Puma][3]
 * [PostgreSQL][4]

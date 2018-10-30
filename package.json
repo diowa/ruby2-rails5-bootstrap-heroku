@@ -5,22 +5,12 @@
     "node": "^11.5.0",
     "yarn": "^1.12.3"
   },
-  "browserslist": [
-    "Chrome >= 45",
-    "Firefox >= 38",
-    "Edge >= 12",
-    "Explorer >= 10",
-    "iOS >= 9",
-    "Safari >= 9",
-    "Android >= 4.4",
-    "Opera >= 30"
-  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
     "@fortawesome/free-brands-svg-icons": "^5.6.3",
     "@fortawesome/free-regular-svg-icons": "^5.6.3",
     "@fortawesome/free-solid-svg-icons": "^5.6.3",
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "^4.0.0-rc.2",
     "actioncable": "^5.2.2",
     "bootstrap": "^4.2.1",
     "exports-loader": "^0.7.0",
@@ -37,7 +27,7 @@
     "stylelint-order": "^2.0.0",
     "stylelint-scss": "^3.4.3",
     "stylelint-webpack-plugin": "^0.10.5",
-    "webpack-cli": "^2.1.5",
-    "webpack-dev-server": "^2.11.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.11"
   }
 }

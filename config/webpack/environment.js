@@ -3,16 +3,9 @@ const { environment } = require('@rails/webpacker')
 const webpack = require('webpack')
 
 // resolve-url-loader must be used before sass-loader
-const sassLoader      = environment.loaders.get('sass')
-const findSassLoader  = loader => (loader === 'sass-loader' || loader.loader === 'sass-loader')
-const sassLoaderIndex = sassLoader.use.findIndex(findSassLoader)
-
-sassLoader.use.splice(sassLoaderIndex, 0, {
+environment.loaders.get('sass').use.splice(-1, 0, {
   loader: 'resolve-url-loader'
-})
-
-// Get a pre-configured plugin
-environment.plugins.get('ExtractText') // Is an ExtractTextPlugin instance
+});
 
 // Add an additional plugin of your choosing : ProvidePlugin
 environment.plugins.prepend(
