@@ -9,6 +9,10 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/bundle/**/*'
 
+Layout/AlignHash:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
 Metrics/BlockLength:
   Enabled: false
 
