@@ -34,3 +34,6 @@ RSpec/DescribeClass:
 
 Style/Documentation:
   Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
