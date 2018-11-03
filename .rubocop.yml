@@ -9,6 +9,10 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/bundle/**/*'
 
+Layout/AlignHash:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
 Metrics/BlockLength:
   Enabled: false
 
@@ -33,4 +37,7 @@ RSpec/DescribeClass:
     - 'spec/system/**/*'
 
 Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
   Enabled: false
