@@ -28,7 +28,7 @@ group :development, :test do
   gem 'byebug', '~> 10.0', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 4.11'
   gem 'faker', '~> 1.9'
-  gem 'pry', '~> 0.11.3'
+  gem 'pry', '~> 0.12.0'
   gem 'pry-byebug', '~> 3.6'
   gem 'pry-rails', '~> 0.3.6'
   gem 'rspec-rails', '~> 3.8'
