@@ -2,7 +2,7 @@
   "name": "ruby2-rails5-bootstrap-heroku",
   "private": true,
   "engines": {
-    "node": "^11.1.0",
+    "node": "^11.2.0",
     "yarn": "^1.12.3"
   },
   "browserslist": [
