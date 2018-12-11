@@ -1,6 +1,13 @@
 # Changelog
 
-## 2.6.0 / 2018-02-03
+## 2.7.0 / 2018-12-11
+
+* [FEATURE] Update Rails to 5.2.2
+* [FEATURE] Update Font Awesome to 5.6.0
+* [BUGFIX] Fix changelog
+* [ENHANCEMENT] Update dependencies
+
+## 2.6.0 / 2018-11-03
 
 * [FEATURE] Update Font Awesome to 5.5.0
 * [ENHANCEMENT] Update dependencies
