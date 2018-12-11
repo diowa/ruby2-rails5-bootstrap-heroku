@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
-gem 'rails', '5.2.1'
+gem 'rails', '5.2.2'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
@@ -22,17 +22,17 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'slim-rails', '~> 3.2'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 5.4'
+gem 'newrelic_rpm', '~> 5.5'
 
 group :development, :test do
   gem 'byebug', '~> 10.0', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 4.11'
   gem 'faker', '~> 1.9'
-  gem 'pry', '~> 0.11.3'
+  gem 'pry', '~> 0.12.2'
   gem 'pry-byebug', '~> 3.6'
-  gem 'pry-rails', '~> 0.3.6'
+  gem 'pry-rails', '~> 0.3.8'
   gem 'rspec-rails', '~> 3.8'
-  gem 'rubocop', '~> 0.60.0', require: false
+  gem 'rubocop', '~> 0.61.1', require: false
   gem 'rubocop-rspec', '~> 1.30', require: false
   gem 'slim_lint', '~> 0.16.0', require: false
 end
@@ -50,7 +50,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.10'
+  gem 'capybara', '~> 3.12'
   gem 'coveralls_reborn', '~> 0.12.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.14'
