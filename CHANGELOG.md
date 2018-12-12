@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.7.1 / 2018-12-12
+
+* [FEATURE] Update Font Awesome to 5.6.1
+* [BUGFIX] Fix homepage
+* [ENHANCEMENT] Update dependencies
+
 ## 2.7.0 / 2018-12-11
 
 * [FEATURE] Update Rails to 5.2.2
