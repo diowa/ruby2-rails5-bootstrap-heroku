@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.7.1 / 2018-12-21
+
+* [FEATURE] Update Font Awesome to 5.6.3
+* [ENHANCEMENT] Update dependencies
+
 ## 2.7.1 / 2018-12-12
 
 * [FEATURE] Update Font Awesome to 5.6.1
