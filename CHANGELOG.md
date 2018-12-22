@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.0 / 2018-12-22
+
+* [FEATURE] Webpacker 4
+* [FEATURE] Bootstrap 4.2.1
+* [ENHANCEMENT] Update dependencies
+
 ## 2.7.3 / 2018-12-21
 
 * [BUGFIX] Fix Changelog
