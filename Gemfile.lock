@@ -244,7 +244,7 @@ GEM
     tins (1.20.2)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    unicode-display_width (1.4.0)
+    unicode-display_width (1.4.1)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
