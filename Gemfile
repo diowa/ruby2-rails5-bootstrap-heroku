@@ -24,6 +24,9 @@ gem 'slim-rails', '~> 3.2'
 # App monitoring
 gem 'newrelic_rpm', '~> 6.5'
 
+gem 'client_side_validations', '~> 15.0'
+gem 'client_side_validations-simple_form', '~> 7.0'
+
 group :development, :test do
   gem 'byebug', '~> 11.0', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.0'

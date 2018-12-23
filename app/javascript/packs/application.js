@@ -12,5 +12,8 @@ import 'src/application.scss'
 import 'src/bootstrap.js'
 import 'src/fontawesome.js'
 
+import '@client-side-validations/client-side-validations'
+
 RailsUjs.start()
 Turbolinks.start()
+ClientSideValidations.start()
