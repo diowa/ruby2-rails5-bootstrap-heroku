@@ -5,9 +5,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-This is a starter web application based on the following technology stack:
+This is an opinionated starter web application based on the following technology stack:
 
-* [Ruby 2.5.3][1]
+* [Ruby 2.6.0][1]
 * [Rails 5.2.2][2]
 * [Webpack 4][15]
 * [Yarn][16]

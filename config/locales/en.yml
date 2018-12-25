@@ -31,7 +31,7 @@
 
 en:
   app_name: "Rails 5 Starter App"
-  meta_description: "A starter application based on Ruby 2.5, Rails 5.2, Webpack 4, Yarn and Bootstrap 4"
+  meta_description: "An opinionated starter application based on Ruby 2.6, Rails 5.2, Webpack 4, Yarn and Bootstrap 4"
   shared:
     navbar:
       toggle_navigation: "Toggle Navigation"
