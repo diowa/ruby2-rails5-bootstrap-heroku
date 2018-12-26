@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.1 / 2018-12-26
+
+* [BUGFIX] Fix Homepage
+
 ## 3.1.0 / 2018-12-26
 
 * [FEATURE] Ruby 2.6.0
