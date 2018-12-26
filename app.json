@@ -1,9 +1,10 @@
 {
   "name": "Rails 5 Starter App",
-  "description": "A starter application based on Ruby 2.5, Rails 5.2, Webpack 4, Yarn and Bootstrap 4",
+  "description": "An opinionated starter application based on Ruby 2.6, Rails 5.2, Webpack 4, Yarn and Bootstrap 4",
   "keywords": [
-    "Ruby 2.5",
+    "Ruby 2.6",
     "Rails 5.2",
+    "Webpack 4",
     "Bootstrap 4",
     "Font Awesome 5"
   ],

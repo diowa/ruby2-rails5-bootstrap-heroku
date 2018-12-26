@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0 / 2018-12-26
+
+* [FEATURE] Ruby 2.6.0
+* [ENHANCEMENT] Update dependencies
+
 ## 3.0.0 / 2018-12-22
 
 * [FEATURE] Webpacker 4
