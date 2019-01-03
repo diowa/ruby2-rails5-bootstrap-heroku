@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.2 / 2019-01-03
+
+* [ENHANCEMENT] Update dependencies
+
 ## 3.1.1 / 2018-12-26
 
 * [BUGFIX] Fix Homepage

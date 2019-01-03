@@ -30,10 +30,10 @@ group :development, :test do
   gem 'faker', '~> 1.9'
   gem 'pry', '~> 0.12.2'
   gem 'pry-byebug', '~> 3.6'
-  gem 'pry-rails', '~> 0.3.8'
+  gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 3.8'
-  gem 'rubocop', '~> 0.61.1', require: false
-  gem 'rubocop-rspec', '~> 1.30', require: false
+  gem 'rubocop', '~> 0.62.0', require: false
+  gem 'rubocop-rspec', '~> 1.31', require: false
   gem 'slim_lint', '~> 0.16.0', require: false
 end
 
@@ -55,7 +55,7 @@ group :test do
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.14'
   gem 'simplecov', '~> 0.16.1', require: false
-  gem 'webmock', '~> 3.4', require: false
+  gem 'webmock', '~> 3.5', require: false
 end
 
 group :staging, :production do
