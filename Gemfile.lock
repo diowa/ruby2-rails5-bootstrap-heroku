@@ -86,14 +86,14 @@ GEM
       railties (>= 3.0.0)
     faker (1.9.1)
       i18n (>= 0.7)
-    ffi (1.9.25)
+    ffi (1.10.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hashdiff (0.3.8)
     htmlentities (4.3.4)
-    i18n (1.4.0)
+    i18n (1.5.1)
       concurrent-ruby (~> 1.0)
-    jaro_winkler (1.5.1)
+    jaro_winkler (1.5.2)
     json (2.1.0)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -116,7 +116,7 @@ GEM
     msgpack (1.2.4)
     newrelic_rpm (5.6.0.349)
     nio4r (2.3.1)
-    nokogiri (1.9.1)
+    nokogiri (1.10.0)
       mini_portile2 (~> 2.4.0)
     parallel (1.12.1)
     parser (2.5.3.0)
@@ -303,4 +303,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
