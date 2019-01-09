@@ -23,7 +23,7 @@ before_install:
   - gem install bundler
   - nvm install 11
   - node -v
-  - npm i -g yarn@^1.12.3
+  - npm i -g yarn@^1.13.0
   - yarn
   - ln -s /usr/lib/chromium-browser/chromedriver ~/bin/chromedriver
 
