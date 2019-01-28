@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.0 / 2019-01-29
+
+* [FEATURE] Font Awesome 5.7.0
+* [ENHANCEMENT] Update dependencies
+
 ## 3.1.2 / 2019-01-03
 
 * [ENHANCEMENT] Update dependencies
