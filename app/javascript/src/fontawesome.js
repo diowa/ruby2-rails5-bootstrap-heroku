@@ -8,4 +8,4 @@ library.add(
   faGithub
 )
 
-dom.watch({ observeMutationsRoot: document })
+dom.watch()
