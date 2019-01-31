@@ -2,7 +2,7 @@
   "name": "ruby2-rails5-bootstrap-heroku",
   "private": true,
   "engines": {
-    "node": "^11.7.0",
+    "node": "^11.8.0",
     "yarn": "^1.13.0"
   },
   "dependencies": {
@@ -15,7 +15,7 @@
     "bootstrap": "^4.2.1",
     "exports-loader": "^0.7.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6",
+    "popper.js": "^1.14.7",
     "rails-ujs": "^5.2.2",
     "resolve-url-loader": "^3.0.0",
     "turbolinks": "^5.2.0"
