@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.3.1 / 2019-02-02
+
+* [FEATURE] Font Awesome 5.7.1
+* [ENHANCEMENT] Update dependencies
+
 ## 3.3.0 / 2019-01-31
 
 * [FEATURE] Ruby 2.6.1
