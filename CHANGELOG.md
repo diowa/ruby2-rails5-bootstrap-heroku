@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.1 / 2019-02-13
+
+* [FEATURE] Bootstrap 4.3.1
+
 ## 4.0.0 / 2019-02-13
 
 * [FEATURE] Responsive Font Sizes
