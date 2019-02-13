@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.0.0 / 2019-02-13
+
+* [FEATURE] Responsive Font Sizes
+* [FEATURE] Font Awesome 5.7.2
+* [FEATURE] Bootstrap 4.3.0
+* [ENHANCEMENT] Update dependencies
+
 ## 3.3.1 / 2019-02-02
 
 * [FEATURE] Font Awesome 5.7.1
