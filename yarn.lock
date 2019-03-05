@@ -695,10 +695,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@rails/webpacker@^4.0.0-rc.8":
-  version "4.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.0.0-rc.8.tgz#ccffbc8f5561ad04178af982f43623a43960b204"
-  integrity sha512-At1VE4uNbb1BI6yDCqhaCT6MNQamlYhYrXZkrJkbayCPGzWK9vUq49+csgDjD3o/IYnNEweJo2vgixfxl6qNyg==
+"@rails/webpacker@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.0.1.tgz#4e20f1115dd583e4410cf3f895bfd1dd717155a3"
+  integrity sha512-P9wDoB4TpsiQOudTIzusUXsZhToxBE8B+yN9KdVIBCzJnZFaCXHbSc72JoHnTKM+3YKP1od+j4TM4uS0rglmow==
   dependencies:
     "@babel/core" "^7.3.4"
     "@babel/plugin-proposal-class-properties" "^7.3.4"
