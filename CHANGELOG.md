@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.1.0 / 2019-03-05
+
+* [FEATURE] Webpacker 4
+* [ENHANCEMENT] Update dependencies
+
 ## 4.0.1 / 2019-02-13
 
 * [FEATURE] Bootstrap 4.3.1
@@ -41,7 +46,7 @@
 
 ## 3.0.0 / 2018-12-22
 
-* [FEATURE] Webpacker 4
+* [FEATURE] Webpacker 4rc
 * [FEATURE] Bootstrap 4.2.1
 * [ENHANCEMENT] Update dependencies
 
