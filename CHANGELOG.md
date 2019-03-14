@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.2.0 / 2019-03-14
+
+* [FEATURE] Rails 5.2.2.1
+* [ENHANCEMENT] Update dependencies
+
 ## 4.1.0 / 2019-03-05
 
 * [FEATURE] Webpacker 4
