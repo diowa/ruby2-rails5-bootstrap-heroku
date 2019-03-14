@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.3.0 / 2019-03-14
+
+* [FEATURE] Ruby 2.6.2
+* [FEATURE] Bundler 2
+
 ## 4.2.0 / 2019-03-14
 
 * [FEATURE] Rails 5.2.2.1
