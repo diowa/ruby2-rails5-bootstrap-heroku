@@ -6,10 +6,10 @@
     "yarn": "^1.15.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.15",
-    "@fortawesome/free-brands-svg-icons": "^5.7.2",
-    "@fortawesome/free-regular-svg-icons": "^5.7.2",
-    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.16",
+    "@fortawesome/free-brands-svg-icons": "^5.8.0",
+    "@fortawesome/free-regular-svg-icons": "^5.8.0",
+    "@fortawesome/free-solid-svg-icons": "^5.8.0",
     "@rails/webpacker": "^4.0.2",
     "actioncable": "^5.2.2",
     "bootstrap": "^4.3.1",
