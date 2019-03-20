@@ -2,8 +2,8 @@
   "name": "ruby2-rails5-bootstrap-heroku",
   "private": true,
   "engines": {
-    "node": "^11.10.0",
-    "yarn": "^1.13.0"
+    "node": "^11.11.0",
+    "yarn": "^1.15.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
@@ -27,7 +27,7 @@
     "stylelint-order": "^2.1.0",
     "stylelint-scss": "^3.5.4",
     "stylelint-webpack-plugin": "^0.10.5",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   }
 }
