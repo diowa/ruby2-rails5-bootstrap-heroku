@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.6.0 / 2019-03-22
+
+* [FEATURE] Rails 5.2.3
+* [ENHANCEMENT] Update dependencies
+
 ## 4.5.0 / 2019-03-22
 
 * [FEATURE] Font Awesome 5.8.1
