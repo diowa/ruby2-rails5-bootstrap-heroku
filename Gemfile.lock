@@ -47,7 +47,7 @@ GEM
     arel (9.0.0)
     ast (2.4.0)
     bindex (0.6.0)
-    bootsnap (1.4.2)
+    bootsnap (1.4.3)
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (11.0.1)
