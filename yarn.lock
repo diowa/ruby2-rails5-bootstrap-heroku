@@ -7263,10 +7263,10 @@ stylelint-config-standard@^18.2.0:
   dependencies:
     stylelint-config-recommended "^2.1.0"
 
-stylelint-order@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-2.2.0.tgz#3208ac76529b35282871a7429075de5b8386fcae"
-  integrity sha512-4ay3Y3gglbsDFHZK13CgLw+YlSKBRrJ59mdCxdytOesRewoTLLlmUukHJw5dde2h9FZdndfy2NE5rEhxIoI24w==
+stylelint-order@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-2.2.1.tgz#cd2d4a0d81d91c705f1d275a58487e5ad5aa5828"
+  integrity sha512-019KBV9j8qp1MfBjJuotse6MgaZqGVtXMc91GU9MsS9Feb+jYUvUU3Z8XiClqPdqJZQ0ryXQJGg3U3PcEjXwfg==
   dependencies:
     lodash "^4.17.10"
     postcss "^7.0.2"
