@@ -46,7 +46,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
     ast (2.4.0)
-    bindex (0.6.0)
+    bindex (0.7.0)
     bootsnap (1.4.3)
       msgpack (~> 1.0)
     builder (3.2.3)
@@ -300,7 +300,7 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.6.3p62
 
 BUNDLED WITH
    2.0.1
