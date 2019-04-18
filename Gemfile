@@ -32,7 +32,7 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.7'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 3.8'
-  gem 'rubocop', '~> 0.66.0', require: false
+  gem 'rubocop', '~> 0.67.2', require: false
   gem 'rubocop-rspec', '~> 1.32', require: false
   gem 'slim_lint', '~> 0.16.0', require: false
 end
@@ -50,10 +50,10 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.15'
+  gem 'capybara', '~> 3.16'
   gem 'coveralls_reborn', '~> 0.12.0', require: false
   gem 'email_spec', '~> 2.2'
-  gem 'selenium-webdriver', '~> 3.14'
+  gem 'selenium-webdriver', '~> 3.141'
   gem 'simplecov', '~> 0.16.1', require: false
   gem 'webmock', '~> 3.5', require: false
 end
