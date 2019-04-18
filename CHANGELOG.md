@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.7.0 / 2019-04-18
+
+* [FEATURE] Ruby 2.6.3
+* [ENHANCEMENT] Update dependencies
+
 ## 4.6.0 / 2019-03-22
 
 * [FEATURE] Rails 5.2.3
