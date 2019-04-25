@@ -53,7 +53,7 @@ group :test do
   gem 'capybara', '~> 3.18'
   gem 'coveralls_reborn', '~> 0.12.0', require: false
   gem 'email_spec', '~> 2.2'
-  gem 'selenium-webdriver', '~> 3.141'
+  gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.16.1', require: false
   gem 'webmock', '~> 3.5', require: false
 end
