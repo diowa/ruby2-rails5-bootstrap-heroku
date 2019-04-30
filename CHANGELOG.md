@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.7.1 / 2019-04-30
+
+* [ENHANCEMENT] Update dependencies
+
 ## 4.7.0 / 2019-04-18
 
 * [FEATURE] Ruby 2.6.3
