@@ -16,6 +16,8 @@ cache:
   yarn: true
 
 env:
+  # DON'T DO THIS. DO NOT COMMIT YOUR MASTER KEY TO THE SOURCE CODE.
+  # Ref: https://docs.travis-ci.com/user/encryption-keys/
   - RAILS_MASTER_KEY=b8cc3ac9ab8a3280b03af3d29b2e50ca
 
 before_install:
