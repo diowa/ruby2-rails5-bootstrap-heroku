@@ -7320,7 +7320,8 @@ stylelint-scss@^3.6.1:
 
 stylelint-webpack-plugin@tagliala/stylelint-webpack-plugin#global-refresh:
   version "0.10.5"
-  resolved "https://codeload.github.com/tagliala/stylelint-webpack-plugin/tar.gz/739e3862232507214f21f82572009a94aa030609"
+  uid "9a0a612ded8fea005753f58e2b28f90693ffaa8c"
+  resolved "https://codeload.github.com/tagliala/stylelint-webpack-plugin/tar.gz/9a0a612ded8fea005753f58e2b28f90693ffaa8c"
   dependencies:
     arrify "^2.0.1"
     micromatch "^4.0.2"
