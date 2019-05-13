@@ -51,7 +51,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (11.0.1)
-    capybara (3.18.0)
+    capybara (3.19.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -200,7 +200,7 @@ GEM
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
     safe_yaml (1.0.5)
-    selenium-webdriver (3.142.1)
+    selenium-webdriver (3.142.2)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
     simplecov (0.16.1)
@@ -270,7 +270,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug (~> 11.0)
-  capybara (~> 3.18)
+  capybara (~> 3.19)
   coveralls_reborn (~> 0.12.0)
   email_spec (~> 2.2)
   factory_bot_rails (~> 5.0)
