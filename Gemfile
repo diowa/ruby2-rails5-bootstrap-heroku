@@ -32,9 +32,9 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.7'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 3.8'
-  gem 'rubocop', '~> 0.68.1', require: false
-  gem 'rubocop-performance', '~> 1.2', require: false
-  gem 'rubocop-rspec', '~> 1.32', require: false
+  gem 'rubocop', '~> 0.69.0', require: false
+  gem 'rubocop-performance', '~> 1.3', require: false
+  gem 'rubocop-rspec', '~> 1.33', require: false
   gem 'slim_lint', '~> 0.17.0', require: false
 end
 
