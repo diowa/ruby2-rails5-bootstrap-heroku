@@ -34,6 +34,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'rubocop', '~> 0.71.0', require: false
   gem 'rubocop-performance', '~> 1.3', require: false
+  gem 'rubocop-rails', '~> 2.0', require: false
   gem 'rubocop-rspec', '~> 1.33', require: false
   gem 'slim_lint', '~> 0.17.0', require: false
 end
