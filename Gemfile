@@ -45,7 +45,7 @@ group :development do
   # gem 'bullet', '~> 5.6'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # gem 'meta_request', '~> 0.4.3'
-  gem 'spring', '~> 2.0'
+  gem 'spring', '~> 2.1'
   gem 'spring-commands-rspec', '~> 1.0'
   gem 'spring-watcher-listen', '~> 2.0'
   gem 'web-console', '~> 3.7'
