@@ -27,7 +27,7 @@
     "stylelint-order": "^3.0.0",
     "stylelint-scss": "^3.8.0",
     "stylelint-webpack-plugin": "tagliala/stylelint-webpack-plugin#global-refresh",
-    "webpack-cli": "^3.3.4",
+    "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   }
 }
