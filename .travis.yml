@@ -8,9 +8,6 @@ rvm:
 
 addons:
   chrome: stable
-  apt:
-    packages:
-      - chromium-chromedriver
 
 cache:
   bundler: true
@@ -30,7 +27,9 @@ before_install:
   - node -v
   - npm i -g yarn@^1.15.2
   - yarn
-  - ln -s /usr/lib/chromium-browser/chromedriver ~/bin/chromedriver
+  - LATEST_CHROMEDRIVER_VERSION=`curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
+  - curl https://chromedriver.storage.googleapis.com/${LATEST_CHROMEDRIVER_VERSION}/chromedriver_linux64.zip -O
+  - unzip chromedriver_linux64.zip -d ~/bin
 
 before_script:
   - psql -c 'create database "ruby2-rails5-bootstrap-heroku_test";' -U postgres
