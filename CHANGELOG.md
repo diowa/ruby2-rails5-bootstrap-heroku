@@ -2,7 +2,7 @@
 
 ## master / unreleased
 
-* [FEATURE] Font Awesome 5.9.0
+* [FEATURE] Font Awesome 5.10.1
 * [ENHANCEMENT] Update dependencies
 
 ## 4.7.1 / 2019-04-30
