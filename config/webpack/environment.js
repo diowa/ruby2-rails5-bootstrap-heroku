@@ -24,7 +24,6 @@ environment.plugins.prepend(
 
     // Rails dependencies
     ActionCable: 'actioncable',
-    Turbolinks: 'turbolinks',
     RailsUjs: 'rails-ujs',
 
     // Individual Bootstrap plugins
