@@ -1,6 +1,6 @@
 # Changelog
 
-## master / unreleased
+## 4.8.0 / 2019-08-06
 
 * [FEATURE] Font Awesome 5.10.1
 * [ENHANCEMENT] Update dependencies
