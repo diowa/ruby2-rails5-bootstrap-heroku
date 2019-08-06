@@ -17,7 +17,6 @@ environment.plugins.prepend(
     jquery: 'jquery',
 
     // Window
-    'window.Tether': 'tether',
     'window.jQuery': 'jquery',
 
     // Bootstrap dependencies

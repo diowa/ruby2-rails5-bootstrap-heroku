@@ -1,13 +1,13 @@
 language: ruby
-sudo: false
+
+services:
+  - postgresql
+
 rvm:
   - 2.6.3
 
 addons:
   chrome: stable
-  apt:
-    packages:
-      - chromium-chromedriver
 
 cache:
   bundler: true
@@ -16,16 +16,20 @@ cache:
   yarn: true
 
 env:
+  # DON'T DO THIS. DO NOT COMMIT YOUR MASTER KEY TO THE SOURCE CODE.
+  # Ref: https://docs.travis-ci.com/user/encryption-keys/
   - RAILS_MASTER_KEY=b8cc3ac9ab8a3280b03af3d29b2e50ca
 
 before_install:
   - gem update --system
   - gem install bundler
-  - nvm install 11
+  - nvm install 12
   - node -v
   - npm i -g yarn@^1.15.2
   - yarn
-  - ln -s /usr/lib/chromium-browser/chromedriver ~/bin/chromedriver
+  - LATEST_CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE"`
+  - curl "https://chromedriver.storage.googleapis.com/${LATEST_CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
+  - unzip chromedriver_linux64.zip -d ~/bin
 
 before_script:
   - psql -c 'create database "ruby2-rails5-bootstrap-heroku_test";' -U postgres

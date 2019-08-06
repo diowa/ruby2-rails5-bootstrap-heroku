@@ -1,5 +1,6 @@
 require:
   - rubocop-performance
+  - rubocop-rails
   - rubocop-rspec
 
 AllCops:
@@ -28,9 +29,6 @@ Metrics/MethodLength:
 Metrics/ModuleLength:
   Exclude:
     - 'spec/**/*'
-
-Rails:
-  Enabled: true
 
 RSpec/DescribeClass:
   Exclude:
