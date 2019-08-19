@@ -9,7 +9,9 @@ AllCops:
   Exclude:
     - 'bin/*'
     - 'db/**/*'
+    - 'log/**/*'
     - 'node_modules/**/*'
+    - 'tmp/**/*'
     - 'vendor/bundle/**/*'
 
 Layout/AlignHash:
