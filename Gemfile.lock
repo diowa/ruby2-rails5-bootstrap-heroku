@@ -253,7 +253,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webmock (3.6.2)
+    webmock (3.7.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -301,7 +301,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0)
   tzinfo-data (~> 1.2018)
   web-console (~> 3.7)
-  webmock (~> 3.6)
+  webmock (~> 3.7)
   webpacker (~> 4.0)
 
 RUBY VERSION
