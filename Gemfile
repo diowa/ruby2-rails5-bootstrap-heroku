@@ -3,14 +3,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.4'
 gem 'rails', '5.2.3'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
 # Use Puma as the app server
-gem 'puma', '~> 4.0'
+gem 'puma', '~> 4.1'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
@@ -27,16 +27,16 @@ gem 'newrelic_rpm', '~> 6.5'
 group :development, :test do
   gem 'byebug', '~> 11.0', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.0'
-  gem 'faker', '~> 2.1'
+  gem 'faker', '~> 2.2'
   gem 'pry', '~> 0.12.2'
   gem 'pry-byebug', '~> 3.7'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 3.8'
   gem 'rubocop', '~> 0.74.0', require: false
   gem 'rubocop-performance', '~> 1.4', require: false
-  gem 'rubocop-rails', '~> 2.2', require: false
+  gem 'rubocop-rails', '~> 2.3', require: false
   gem 'rubocop-rspec', '~> 1.35', require: false
-  gem 'slim_lint', '~> 0.17.0', require: false
+  gem 'slim_lint', '~> 0.17.1', require: false
 end
 
 group :development do
@@ -57,7 +57,7 @@ group :test do
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.17.0', require: false
-  gem 'webmock', '~> 3.6', require: false
+  gem 'webmock', '~> 3.7', require: false
 end
 
 group :staging, :production do

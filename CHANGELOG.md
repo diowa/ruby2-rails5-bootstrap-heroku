@@ -1,5 +1,13 @@
 # Changelog
 
+## master / unreleased
+
+* [FEATURE] Ruby 2.6.4
+* [FEATURE] Font Awesome 5.10.2
+* [FEATURE] Add JavaScript Standard Style linter
+* [ENHANCEMENT] Speed up RuboCop analysis
+* [ENHANCEMENT] Update dependencies
+
 ## 4.8.0 / 2019-08-06
 
 * [FEATURE] Font Awesome 5.10.1
