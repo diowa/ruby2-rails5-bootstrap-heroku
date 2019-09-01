@@ -2,6 +2,7 @@
 
 ## master / unreleased
 
+* [FEATURE] Ruby 2.6.4
 * [FEATURE] Font Awesome 5.10.2
 * [FEATURE] Add JavaScript Standard Style linter
 * [ENHANCEMENT] Speed up RuboCop analysis
