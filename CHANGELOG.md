@@ -1,6 +1,6 @@
 # Changelog
 
-## master / unreleased
+## 4.9.0 / 2019-09-01
 
 * [FEATURE] Ruby 2.6.4
 * [FEATURE] Font Awesome 5.10.2
