@@ -52,7 +52,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.28'
+  gem 'capybara', '~> 3.29'
   gem 'coveralls_reborn', '~> 0.13.2', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
