@@ -25,7 +25,7 @@
     "standard-loader": "^7.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^3.1.0",
     "stylelint-scss": "^3.10.1",
     "stylelint-webpack-plugin": "tagliala/stylelint-webpack-plugin#global-refresh",
