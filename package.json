@@ -21,7 +21,7 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "standard": "^14.3.0",
+    "standard": "^14.3.1",
     "standard-loader": "^7.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
