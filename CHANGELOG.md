@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.10.0 / 2019-10-30
+
+* [FEATURE] Ruby 2.6.5
+* [FEATURE] Font Awesome 5.11.2
+* [ENHANCEMENT] Update dependencies
+
 ## 4.9.0 / 2019-09-01
 
 * [FEATURE] Ruby 2.6.4
