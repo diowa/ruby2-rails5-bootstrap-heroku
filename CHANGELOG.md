@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.11.0 / 2019-10-30
+
+* [FEATURE] Bootstrap 4.4.1
+* [ENHANCEMENT] Update dependencies
+
 ## 4.10.0 / 2019-10-30
 
 * [FEATURE] Ruby 2.6.5
