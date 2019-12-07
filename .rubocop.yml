@@ -14,10 +14,6 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/bundle/**/*'
 
-Layout/AlignHash:
-  EnforcedColonStyle: table
-  EnforcedHashRocketStyle: table
-
 Metrics/BlockLength:
   Enabled: false
 

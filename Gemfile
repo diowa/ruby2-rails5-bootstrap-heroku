@@ -4,16 +4,16 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
-gem 'rails', '5.2.3'
+gem 'rails', '5.2.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
 # Use Puma as the app server
-gem 'puma', '~> 4.2'
+gem 'puma', '~> 4.3'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 4.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -27,15 +27,15 @@ gem 'newrelic_rpm', '~> 6.7'
 group :development, :test do
   gem 'byebug', '~> 11.0', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.1'
-  gem 'faker', '~> 2.6'
+  gem 'faker', '~> 2.8'
   gem 'pry', '~> 0.12.2'
   gem 'pry-byebug', '~> 3.7'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 3.9'
-  gem 'rubocop', '~> 0.76.0', require: false
+  gem 'rubocop', '~> 0.77.0', require: false
   gem 'rubocop-performance', '~> 1.5', require: false
-  gem 'rubocop-rails', '~> 2.3', require: false
-  gem 'rubocop-rspec', '~> 1.36', require: false
+  gem 'rubocop-rails', '~> 2.4', require: false
+  gem 'rubocop-rspec', '~> 1.37', require: false
   gem 'slim_lint', '~> 0.18.0', require: false
 end
 
@@ -53,7 +53,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.29'
-  gem 'coveralls_reborn', '~> 0.13.3', require: false
+  gem 'coveralls_reborn', '~> 0.13.4', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.17.1', require: false
