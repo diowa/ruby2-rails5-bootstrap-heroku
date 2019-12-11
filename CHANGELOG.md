@@ -1,6 +1,11 @@
 # Changelog
 
-## 4.11.0 / 2019-10-30
+## 4.12.0 / 2019-12-11
+
+* [FEATURE] Font Awesome 5.12.0
+* [ENHANCEMENT] Update dependencies
+
+## 4.11.0 / 2019-12-07
 
 * [FEATURE] Bootstrap 4.4.1
 * [ENHANCEMENT] Update dependencies
