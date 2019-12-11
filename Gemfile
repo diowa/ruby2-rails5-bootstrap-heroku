@@ -61,7 +61,7 @@ group :test do
 end
 
 group :staging, :production do
-  gem 'rack-timeout', '~> 0.5.2'
+  gem 'rack-timeout', '~> 0.6.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
