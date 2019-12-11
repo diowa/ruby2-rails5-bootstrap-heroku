@@ -36,7 +36,7 @@ group :development, :test do
   gem 'rubocop-performance', '~> 1.5', require: false
   gem 'rubocop-rails', '~> 2.4', require: false
   gem 'rubocop-rspec', '~> 1.37', require: false
-  gem 'slim_lint', '~> 0.18.0', require: false
+  gem 'slim_lint', '~> 0.19.0', require: false
 end
 
 group :development do
@@ -61,7 +61,7 @@ group :test do
 end
 
 group :staging, :production do
-  gem 'rack-timeout', '~> 0.5.2'
+  gem 'rack-timeout', '~> 0.6.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
