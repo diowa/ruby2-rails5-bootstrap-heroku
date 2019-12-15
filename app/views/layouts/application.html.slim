@@ -9,6 +9,7 @@ html lang=I18n.locale.to_s data-default-lang=I18n.default_locale
     meta name='description' content=yield(:meta_description)
 
     = csrf_meta_tags
+    = csp_meta_tag
     = yield :head
 
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'

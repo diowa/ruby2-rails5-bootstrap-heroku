@@ -265,7 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap (>= 1.1.0)
+  bootsnap (~> 1.4)
   byebug (~> 11.0)
   capybara (~> 3.29)
   coveralls_reborn (~> 0.13.4)
@@ -293,7 +293,7 @@ DEPENDENCIES
   spring (~> 2.1)
   spring-commands-rspec (~> 1.0)
   spring-watcher-listen (~> 2.0)
-  tzinfo-data (~> 1.2018)
+  tzinfo-data (~> 1.2019)
   web-console (~> 3.7)
   webmock (~> 3.7)
   webpacker (~> 4.2)
