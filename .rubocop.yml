@@ -14,10 +14,10 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/bundle/**/*'
 
-Metrics/BlockLength:
+Layout/LineLength:
   Enabled: false
 
-Metrics/LineLength:
+Metrics/BlockLength:
   Enabled: false
 
 Metrics/MethodLength:
