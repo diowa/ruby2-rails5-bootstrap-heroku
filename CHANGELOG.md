@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.13.1 / 2019-12-25
+
+* [BUGFIX] Fix Homepage
+
 ## 4.13.0 / 2019-12-25
 
 * [FEATURE] Ruby 2.7
