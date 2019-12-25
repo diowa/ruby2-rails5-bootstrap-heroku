@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.14.0 / 2019-12-25
+
+* [FEATURE] Rails 5.2.4.1
+
 ## 4.13.1 / 2019-12-25
 
 * [BUGFIX] Fix Homepage
@@ -16,6 +20,7 @@
 
 ## 4.11.0 / 2019-12-07
 
+* [FEATURE] Rails 5.2.4
 * [FEATURE] Bootstrap 4.4.1
 * [ENHANCEMENT] Update dependencies
 
