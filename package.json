@@ -1,6 +1,7 @@
 {
   "name": "ruby2-rails5-bootstrap-heroku",
   "private": true,
+  "version": "4.12.0",
   "engines": {
     "node": ">= 12.0.0 <= 14.0.0",
     "yarn": "^1.15.2"
@@ -29,8 +30,8 @@
     "stylelint-order": "^3.1.1",
     "stylelint-scss": "^3.13.0",
     "stylelint-webpack-plugin": "tagliala/stylelint-webpack-plugin#global-refresh",
-    "webpack": "^4.41.2",
+    "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.10.1"
   }
 }

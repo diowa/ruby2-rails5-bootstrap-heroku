@@ -16,7 +16,7 @@ gem 'puma', '~> 4.3'
 gem 'webpacker', '~> 4.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '~> 1.4', require: false
 
 # Template Engine
 gem 'slim-rails', '~> 3.2'
@@ -27,12 +27,12 @@ gem 'newrelic_rpm', '~> 6.7'
 group :development, :test do
   gem 'byebug', '~> 11.0', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.1'
-  gem 'faker', '~> 2.8'
+  gem 'faker', '~> 2.9'
   gem 'pry', '~> 0.12.2'
   gem 'pry-byebug', '~> 3.7'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 3.9'
-  gem 'rubocop', '~> 0.77.0', require: false
+  gem 'rubocop', '~> 0.78.0', require: false
   gem 'rubocop-performance', '~> 1.5', require: false
   gem 'rubocop-rails', '~> 2.4', require: false
   gem 'rubocop-rspec', '~> 1.37', require: false
@@ -53,7 +53,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.29'
-  gem 'coveralls_reborn', '~> 0.13.4', require: false
+  gem 'coveralls_reborn', '~> 0.14.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.17.1', require: false
@@ -65,4 +65,4 @@ group :staging, :production do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', '~> 1.2018', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'tzinfo-data', '~> 1.2019', platforms: %i[mingw mswin x64_mingw jruby]
