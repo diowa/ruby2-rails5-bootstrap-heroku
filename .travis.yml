@@ -4,7 +4,7 @@ services:
   - postgresql
 
 rvm:
-  - 2.6.5
+  - 2.7.0
 
 addons:
   chrome: stable
