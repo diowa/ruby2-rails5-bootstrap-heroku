@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.13.0 / unreleased
+## 4.13.0 / 2019-12-25
 
 * [FEATURE] Ruby 2.7
 * [ENHANCEMENT] Update dependencies
