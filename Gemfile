@@ -7,7 +7,7 @@ ruby '2.6.5'
 gem 'rails', '5.2.4'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '~> 1.2'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.29'
+  gem 'capybara', '~> 3.30'
   gem 'coveralls_reborn', '~> 0.14.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
