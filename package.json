@@ -30,7 +30,7 @@
     "stylelint-order": "^3.1.1",
     "stylelint-scss": "^3.13.0",
     "stylelint-webpack-plugin": "tagliala/stylelint-webpack-plugin#global-refresh",
-    "webpack": "^4.41.4",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   }
