@@ -9,4 +9,8 @@ environment.plugins.append(
   })
 )
 
+environment.loaders.get('babel').use.push({
+  loader: 'standard-loader', options: { error: true }
+})
+
 module.exports = environment.toWebpackConfig()

@@ -7,10 +7,6 @@ environment.loaders.get('sass').use.splice(-1, 0, {
   loader: 'resolve-url-loader'
 });
 
-environment.loaders.get('babel').use.push({
-  loader: 'standard-loader', options: { error: true }
-})
-
 // Add an additional plugin of your choosing : ProvidePlugin
 environment.plugins.prepend(
   'Provide',
