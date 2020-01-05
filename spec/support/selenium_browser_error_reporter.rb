@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class SeleniumBrowserErrorReporter
+  SEVERE_LOG_LEVEL = 'SEVERE'
+
   def self.call(page)
     new(page).report!
   end
@@ -10,19 +12,15 @@ class SeleniumBrowserErrorReporter
   end
 
   def report!
-    return if severe_errors.none?
-
-    report = error_report_for(severe_errors)
-    raise Selenium::WebDriver::Error, "There #{severe_errors.count == 1 ? 'was' : 'were'} #{severe_errors.count} "\
-          "JavaScript error#{severe_errors.count == 1 ? '' : 's'}:\n\n#{report}"
+    raise error_messages if severe_errors.any?
   end
 
   private
 
   attr_accessor :page
 
-  def error_report_for(logs)
-    logs
+  def error_report_for(errors)
+    errors
       .map(&:message)
       .map { |message| message.gsub('\\n', "\n") }
       .join("\n\n")
@@ -33,6 +31,18 @@ class SeleniumBrowserErrorReporter
   end
 
   def severe_errors
-    @severe_errors ||= logs.select { |log| log.level == 'SEVERE' }
+    @severe_errors ||= logs.select { |log| log.level == SEVERE_LOG_LEVEL }
+  end
+
+  def errors_description
+    if severe_errors.one?
+      'There was 1 JavaScript error:'
+    else
+      "There were #{severe_errors.size} JavaScript errors:"
+    end
+  end
+
+  def error_messages
+    [errors_description, error_report_for(severe_errors)].join "\n\n"
   end
 end
