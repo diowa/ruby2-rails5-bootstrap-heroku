@@ -25,7 +25,7 @@ gem 'slim-rails', '~> 3.2'
 gem 'newrelic_rpm', '~> 6.8'
 
 group :development, :test do
-  gem 'byebug', '~> 11.0', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.1'
   gem 'faker', '~> 2.10'
   gem 'pry', '~> 0.12.2'
