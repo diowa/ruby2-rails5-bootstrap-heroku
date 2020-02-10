@@ -7035,10 +7035,10 @@ rails-ujs@^5.2.4:
   resolved "https://registry.yarnpkg.com/rails-ujs/-/rails-ujs-5.2.4.tgz#31056ccd62d868f7d044395f31d77a4440550ceb"
   integrity sha512-Mzu6bnTBKn4IuJvP7BDJRy4lzvR1zMWVDeTdPwDubXBfxpFEKqwOi5Nb6tfE2SYtTd+bb3PRETf40I94jgKw3w==
 
-ramda@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+ramda@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.0.tgz#915dc29865c0800bf3f69b8fd6c279898b59de43"
+  integrity sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
@@ -8298,13 +8298,13 @@ stylelint-scss@^3.14.2:
 
 stylelint-webpack-plugin@tagliala/stylelint-webpack-plugin#global-refresh:
   version "0.13.0"
-  uid "0ef14bd1cdb84b6d6efc529f65610d794328c3ba"
-  resolved "https://codeload.github.com/tagliala/stylelint-webpack-plugin/tar.gz/0ef14bd1cdb84b6d6efc529f65610d794328c3ba"
+  uid c9c52b70f2f2c046ef9f9523d9db37062cc11200
+  resolved "https://codeload.github.com/tagliala/stylelint-webpack-plugin/tar.gz/c9c52b70f2f2c046ef9f9523d9db37062cc11200"
   dependencies:
     arrify "^2.0.1"
     micromatch "^4.0.2"
     object-assign "^4.1.0"
-    ramda "^0.26.1"
+    ramda "^0.27.0"
 
 stylelint@^13.0.0:
   version "13.0.0"
