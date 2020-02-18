@@ -56,7 +56,7 @@ group :test do
   gem 'coveralls_reborn', '~> 0.15.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
-  gem 'simplecov', '~> 0.18.1', require: false
+  gem 'simplecov', '~> 0.18.2', require: false
   gem 'webmock', '~> 3.8', require: false
 end
 
