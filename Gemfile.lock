@@ -195,7 +195,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-performance (1.5.2)
       rubocop (>= 0.71.0)
-    rubocop-rails (2.4.2)
+    rubocop-rails (2.5.0)
+      activesupport
       rack (>= 1.1)
       rubocop (>= 0.72.0)
     rubocop-rspec (1.38.1)
@@ -289,7 +290,7 @@ DEPENDENCIES
   rspec-rails (~> 4.0)
   rubocop (~> 0.81.0)
   rubocop-performance (~> 1.5)
-  rubocop-rails (~> 2.4)
+  rubocop-rails (~> 2.5)
   rubocop-rspec (~> 1.38)
   selenium-webdriver (~> 3.142)
   simplecov (~> 0.18.5)
