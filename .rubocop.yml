@@ -11,8 +11,9 @@ AllCops:
     - 'db/**/*'
     - 'log/**/*'
     - 'node_modules/**/*'
+    - 'public/**/*'
     - 'tmp/**/*'
-    - 'vendor/bundle/**/*'
+    - 'vendor/**/*'
 
 Layout/LineLength:
   Enabled: false
