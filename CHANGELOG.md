@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.15.0 / 2020-04-10
+
+* [FEATURE] Ruby 2.7.1
+* [FEATURE] Rails 5.2.4.2
+* [FEATURE] Font Awesome 5.13.0
+* [ENHANCEMENT] Update dependencies
+
 ## 4.14.0 / 2019-12-25
 
 * [FEATURE] Rails 5.2.4.1
