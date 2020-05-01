@@ -19,7 +19,8 @@
     "popper.js": "^1.16.1",
     "rails-ujs": "^5.2.4",
     "resolve-url-loader": "^3.1.1",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "standard": "^14.3.3",
@@ -33,5 +34,10 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
