@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.0.0 / 2020-05-05
+
+* [FEATURE] Responsive Typography
+* [FEATURE] jQuery 3.5.1
+* [ENHANCEMENT] Update dependencies
+
 ## 4.15.0 / 2020-04-10
 
 * [FEATURE] Ruby 2.7.1
