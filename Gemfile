@@ -13,7 +13,7 @@ gem 'pg', '~> 1.2'
 gem 'puma', '~> 4.3'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.0'
+gem 'webpacker', '~> 5.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '~> 1.4', require: false
@@ -26,13 +26,13 @@ gem 'newrelic_rpm', '~> 6.10'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 5.1'
+  gem 'factory_bot_rails', '~> 5.2'
   gem 'faker', '~> 2.11'
-  gem 'pry', '~> 0.13.0'
+  gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 0.81.0', require: false
+  gem 'rubocop', '~> 0.82.0', require: false
   gem 'rubocop-performance', '~> 1.5', require: false
   gem 'rubocop-rails', '~> 2.5', require: false
   gem 'rubocop-rspec', '~> 1.38', require: false
@@ -53,7 +53,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.32'
-  gem 'coveralls_reborn', '~> 0.15.0', require: false
+  gem 'coveralls_reborn', '~> 0.16.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.18.5', require: false
