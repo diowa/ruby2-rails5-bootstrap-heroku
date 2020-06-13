@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.0.0 / 2020-06-13
+
+* [FEATURE] Ruby 2.6.6
+* [FEATURE] Rails 5.2.4.3
+* [FEATURE] Bootstrap 4.5.0
+* [ENHANCEMENT] Update dependencies
+
 ## 5.0.0 / 2020-05-05
 
 * [FEATURE] Responsive Typography
