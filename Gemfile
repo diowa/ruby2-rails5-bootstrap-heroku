@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
-gem 'rails', '5.2.4.2'
+gem 'rails', '5.2.4.3'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2'
@@ -22,21 +22,21 @@ gem 'bootsnap', '~> 1.4', require: false
 gem 'slim-rails', '~> 3.2'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 6.10'
+gem 'newrelic_rpm', '~> 6.11'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 5.2'
-  gem 'faker', '~> 2.11'
+  gem 'faker', '~> 2.12'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 0.82.0', require: false
-  gem 'rubocop-performance', '~> 1.5', require: false
-  gem 'rubocop-rails', '~> 2.5', require: false
-  gem 'rubocop-rspec', '~> 1.39', require: false
-  gem 'slim_lint', '~> 0.20.0', require: false
+  gem 'rubocop', '~> 0.85.1', require: false
+  gem 'rubocop-performance', '~> 1.6', require: false
+  gem 'rubocop-rails', '~> 2.6', require: false
+  gem 'rubocop-rspec', '~> 1.40', require: false
+  gem 'slim_lint', '~> 0.20.1', require: false
 end
 
 group :development do
