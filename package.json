@@ -13,7 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@rails/webpacker": "^5.1.1",
     "actioncable": "^5.2.4",
-    "bootstrap": "^4.5.1",
+    "bootstrap": "^4.5.2",
     "exports-loader": "^1.1.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
