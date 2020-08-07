@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.1.0 / 2020-08-07
+
+* [FEATURE] Bootstrap 4.5.2
+* [FEATURE] Font Awesome 5.14.0
+* [ENHANCEMENT] Update dependencies
+
 ## 6.0.0 / 2020-06-13
 
 * [FEATURE] Ruby 2.6.6
