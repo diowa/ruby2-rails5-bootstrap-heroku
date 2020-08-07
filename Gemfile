@@ -22,20 +22,20 @@ gem 'bootsnap', '~> 1.4', require: false
 gem 'slim-rails', '~> 3.2'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 6.11'
+gem 'newrelic_rpm', '~> 6.12'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 5.2'
-  gem 'faker', '~> 2.12'
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'faker', '~> 2.13'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 0.85.1', require: false
-  gem 'rubocop-performance', '~> 1.6', require: false
-  gem 'rubocop-rails', '~> 2.6', require: false
-  gem 'rubocop-rspec', '~> 1.40', require: false
+  gem 'rubocop', '~> 0.89.0', require: false
+  gem 'rubocop-performance', '~> 1.7', require: false
+  gem 'rubocop-rails', '~> 2.7', require: false
+  gem 'rubocop-rspec', '~> 1.42', require: false
   gem 'slim_lint', '~> 0.20.1', require: false
 end
 
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.32'
+  gem 'capybara', '~> 3.33'
   gem 'coveralls_reborn', '~> 0.16.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
