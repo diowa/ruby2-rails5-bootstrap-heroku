@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-gem 'rails', '5.2.4.3'
+gem 'rails', '5.2.4.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2'
