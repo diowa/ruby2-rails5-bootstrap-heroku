@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.2.0 / 2020-10-10
+
+* [FEATURE] Font Awesome 5.15.1
+* [BUGFIX] Fix Heroku app.json postdeploy script
+* [ENHANCEMENT] Update dependencies
+
 ## 6.1.0 / 2020-08-07
 
 * [FEATURE] Bootstrap 4.5.2
