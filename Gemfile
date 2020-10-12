@@ -4,16 +4,16 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-gem 'rails', '5.2.4.3'
+gem 'rails', '5.2.4.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2'
 
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 5.0'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.1'
+gem 'webpacker', '~> 5.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '~> 1.4', require: false
@@ -22,20 +22,20 @@ gem 'bootsnap', '~> 1.4', require: false
 gem 'slim-rails', '~> 3.2'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 6.11'
+gem 'newrelic_rpm', '~> 6.13'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 5.2'
-  gem 'faker', '~> 2.12'
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'faker', '~> 2.14'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 0.85.1', require: false
-  gem 'rubocop-performance', '~> 1.6', require: false
-  gem 'rubocop-rails', '~> 2.6', require: false
-  gem 'rubocop-rspec', '~> 1.40', require: false
+  gem 'rubocop', '~> 0.93.1', require: false
+  gem 'rubocop-performance', '~> 1.8', require: false
+  gem 'rubocop-rails', '~> 2.8', require: false
+  gem 'rubocop-rspec', '~> 1.43', require: false
   gem 'slim_lint', '~> 0.20.1', require: false
 end
 
@@ -52,12 +52,12 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.32'
-  gem 'coveralls_reborn', '~> 0.16.0', require: false
+  gem 'capybara', '~> 3.33'
+  gem 'coveralls_reborn', '~> 0.18.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
-  gem 'simplecov', '~> 0.18.5', require: false
-  gem 'webmock', '~> 3.8', require: false
+  gem 'simplecov', '~> 0.19.0', require: false
+  gem 'webmock', '~> 3.9', require: false
 end
 
 group :staging, :production do
