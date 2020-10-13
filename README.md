@@ -14,7 +14,7 @@ This is an opinionated starter web application based on the following technology
 * [Puma][3]
 * [PostgreSQL][4]
 * [RSpec][5]
-* [Bootstrap 4.5.2][8]
+* [Bootstrap 4.5.3][8]
 * [Autoprefixer][9]
 * [Font Awesome 5.15.1 SVG][10]
 * [Slim][11]
