@@ -57,7 +57,7 @@ group :test do
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.19.1', require: false
-  gem 'webmock', '~> 3.9', require: false
+  gem 'webmock', '~> 3.10', require: false
 end
 
 group :staging, :production do
