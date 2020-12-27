@@ -6,7 +6,5 @@
 import 'src/bootstrap.js'
 import 'src/fontawesome.js'
 
-require('@rails/ujs').start()
-require('turbolinks').start()
-require('@rails/activestorage').start()
-require('channels')
+RailsUjs.start()
+Turbolinks.start()

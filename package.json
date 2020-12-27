@@ -32,5 +32,17 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "standard": {
+    "ignore": [
+      "/*.js",
+      "app/assets/javascripts",
+      "app/javascript/src/javascripts/vendor"
+    ],
+    "globals": [
+      "$",
+      "RailsUjs",
+      "Turbolinks"
+    ]
   }
 }
