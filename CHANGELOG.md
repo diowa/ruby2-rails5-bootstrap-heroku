@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.0.0 / 2020-12-27
+
+* [FEATURE] Bootstrap 4.5.3
+* [FEATURE] Change webpacker folder structure
+* [ENHANCEMENT] Update dependencies
+
 ## 6.2.0 / 2020-10-10
 
 * [FEATURE] Font Awesome 5.15.1
