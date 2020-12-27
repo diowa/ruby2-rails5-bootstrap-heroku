@@ -27,12 +27,12 @@ gem 'newrelic_rpm', '~> 6.14'
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.1'
-  gem 'faker', '~> 2.14'
+  gem 'faker', '~> 2.15'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 1.6', require: false
+  gem 'rubocop', '~> 1.7', require: false
   gem 'rubocop-performance', '~> 1.9', require: false
   gem 'rubocop-rails', '~> 2.9', require: false
   gem 'rubocop-rspec', '~> 2.1', require: false
