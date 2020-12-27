@@ -1,7 +1,7 @@
 {
-  "name": "ruby2-rails5-bootstrap-heroku",
+  "name": "ruby2_rails5_bootstrap_heroku",
   "private": true,
-  "version": "4.12.0",
+  "version": "7.0.0",
   "engines": {
     "node": ">= 12.0.0 < 16",
     "yarn": "^1.15.2"
