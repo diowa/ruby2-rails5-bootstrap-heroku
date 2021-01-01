@@ -43,7 +43,7 @@ group :development do
   # gem 'better_errors', '~> 2.4'
   # gem 'binding_of_caller', '~> 0.7.3'
   # gem 'bullet', '~> 5.6'
-  gem 'listen', '>= 3.0.5', '< 3.4'
+  gem 'listen', '>= 3.0.5', '< 3.5'
   # gem 'meta_request', '~> 0.4.3'
   gem 'spring', '~> 2.1'
   gem 'spring-commands-rspec', '~> 1.0'
