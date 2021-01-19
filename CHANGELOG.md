@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.1.0 / 2021-01-29
+
+* [FEATURE] Bootstrap 4.6.0
+* [FEATURE] Font Awesome 5.15.2
+* [ENHANCEMENT] Update dependencies
+
 ## 7.0.0 / 2020-12-27
 
 * [FEATURE] Bootstrap 4.5.3
