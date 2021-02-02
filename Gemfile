@@ -16,7 +16,7 @@ gem 'puma', '~> 5.1'
 gem 'webpacker', '~> 5.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '~> 1.6', require: false
+gem 'bootsnap', '~> 1.7', require: false
 
 # Template Engine
 gem 'slim-rails', '~> 3.2'
