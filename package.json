@@ -37,7 +37,8 @@
     "ignore": [
       "/*.js",
       "app/assets/javascripts",
-      "app/javascript/src/vendor"
+      "app/javascript/src/vendor",
+      "/config"
     ],
     "globals": [
       "$",
