@@ -27,7 +27,7 @@ gem 'newrelic_rpm', '~> 6.15'
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.1'
-  gem 'faker', '~> 2.16'
+  gem 'faker', '~> 2.17'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
