@@ -4,19 +4,19 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-gem 'rails', '5.2.4.4'
+gem 'rails', '5.2.5'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2'
 
 # Use Puma as the app server
-gem 'puma', '~> 5.1'
+gem 'puma', '~> 5.2'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '~> 1.5', require: false
+gem 'bootsnap', '~> 1.7', require: false
 
 # Template Engine
 gem 'slim-rails', '~> 3.2'
@@ -27,15 +27,15 @@ gem 'newrelic_rpm', '~> 6.15'
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.1'
-  gem 'faker', '~> 2.15'
+  gem 'faker', '~> 2.17'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
-  gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 1.8', require: false
-  gem 'rubocop-performance', '~> 1.9', require: false
+  gem 'rspec-rails', '~> 5.0'
+  gem 'rubocop', '~> 1.12', require: false
+  gem 'rubocop-performance', '~> 1.10', require: false
   gem 'rubocop-rails', '~> 2.9', require: false
-  gem 'rubocop-rspec', '~> 2.1', require: false
+  gem 'rubocop-rspec', '~> 2.2', require: false
   gem 'slim_lint', '~> 0.20.2', require: false
 end
 
@@ -43,7 +43,7 @@ group :development do
   # gem 'better_errors', '~> 2.4'
   # gem 'binding_of_caller', '~> 0.7.3'
   # gem 'bullet', '~> 5.6'
-  gem 'listen', '>= 3.0.5', '< 3.5'
+  gem 'listen', '>= 3.0.5', '< 3.6'
   # gem 'meta_request', '~> 0.4.3'
   gem 'spring', '~> 2.1'
   gem 'spring-commands-rspec', '~> 1.0'
@@ -52,12 +52,12 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.34'
-  gem 'coveralls_reborn', '~> 0.20.0', require: false
+  gem 'capybara', '~> 3.35'
+  gem 'coveralls_reborn', '~> 0.21.0', require: false
   gem 'email_spec', '~> 2.2'
   gem 'selenium-webdriver', '~> 3.142'
   gem 'simplecov', '~> 0.21.2', require: false
-  gem 'webmock', '~> 3.11', require: false
+  gem 'webmock', '~> 3.12', require: false
 end
 
 group :staging, :production do
