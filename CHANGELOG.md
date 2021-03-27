@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.2.0 / 2021-03-27
+
+* [FEATURE] Rails 5.2.5
+* [FEATURE] Font Awesome 5.15.3
+* [ENHANCEMENT] Update dependencies
+
 ## 7.1.0 / 2021-01-29
 
 * [FEATURE] Bootstrap 4.6.0
