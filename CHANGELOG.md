@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.3.0 / 2021-04-28
+
+* [FEATURE] Ruby 2.6.7
+* [ENHANCEMENT] Update dependencies
+
 ## 7.2.0 / 2021-03-27
 
 * [FEATURE] Rails 5.2.5
