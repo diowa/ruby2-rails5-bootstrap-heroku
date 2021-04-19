@@ -86,6 +86,7 @@ RSpec.configure do |config|
 
   config.before(:each, type: :system, js: true) do
     driven_by :selenium, using: ENV['UI'] ? :chrome : :headless_chrome
+    SeleniumBrowserErrorReporter.clear_error_logs!(page)
   end
 
   config.after(:each, type: :system, js: true) do |spec|
