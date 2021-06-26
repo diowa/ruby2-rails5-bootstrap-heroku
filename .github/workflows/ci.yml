@@ -63,3 +63,8 @@ jobs:
       run: bundle exec rails db:create
     - name: Run specs
       run: bundle exec rake spec
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        path-to-lcov: 'coverage/lcov.info'
