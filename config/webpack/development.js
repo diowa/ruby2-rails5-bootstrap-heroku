@@ -6,12 +6,14 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 environment.plugins.append(
   'StyleLintPlugin',
   new StyleLintPlugin({
+    emitWarning: true,
     files: '/app/**/*.(s(c|a)ss|css)'
   })
 )
 
-environment.loaders.get('babel').use.push({
-  loader: 'standard-loader', options: { error: true }
-})
+environment.loaders.insert('standard-loader', {
+  loader: 'standard-loader',
+  test: /\.js$/
+}, { after: 'babel' })
 
 module.exports = environment.toWebpackConfig()
