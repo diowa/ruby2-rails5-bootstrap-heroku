@@ -7737,7 +7737,7 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-config-recommended-scss@^4.2.0:
+stylelint-config-recommended-scss@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended-scss/-/stylelint-config-recommended-scss-4.3.0.tgz#717dc253b4cab246da654cee208e499c5c797ae4"
   integrity sha512-/noGjXlO8pJTr/Z3qGMoaRFK8n1BFfOqmAbX1RjTIcl4Yalr+LUb1zb9iQ7pRx1GsEBXOAm4g2z5/jou/pfMPg==
@@ -7756,12 +7756,12 @@ stylelint-config-standard@^22.0.0:
   dependencies:
     stylelint-config-recommended "^5.0.0"
 
-stylelint-config-twbs-bootstrap@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/stylelint-config-twbs-bootstrap/-/stylelint-config-twbs-bootstrap-2.2.1.tgz#d38fea21a5e13523fa21912296e5b26a2cb6b909"
-  integrity sha512-Z84komE0vtmtrEAhk1w6rB6HXsxLcOnRPlAWNRXete/zSfk0/zoD/6SjwgKXzfg2kpwUDfVmcFaolhjQK2tPXw==
+stylelint-config-twbs-bootstrap@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/stylelint-config-twbs-bootstrap/-/stylelint-config-twbs-bootstrap-2.2.2.tgz#7ddea1624586aacba4fca28a442aaf4a71136eb0"
+  integrity sha512-HCfscb8ZYAka9wy9VlyW1ddUU+ZJt86J+ycGuejMnL0I7QMEzhFIg0T79NeBcF8Bs8YWfg2TsJfYf9MRL05gqw==
   dependencies:
-    stylelint-config-recommended-scss "^4.2.0"
+    stylelint-config-recommended-scss "^4.3.0"
     stylelint-config-standard "^22.0.0"
     stylelint-order "^4.1.0"
     stylelint-scss "^3.19.0"
