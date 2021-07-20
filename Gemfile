@@ -19,7 +19,7 @@ gem 'webpacker', '~> 5.4'
 gem 'bootsnap', '~> 1.7', require: false
 
 # Template Engine
-gem 'slim-rails', '~> 3.2'
+gem 'slim-rails', '~> 3.3'
 
 # App monitoring
 gem 'newrelic_rpm', '~> 7.2'
