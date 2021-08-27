@@ -47,7 +47,7 @@ GEM
     arel (9.0.0)
     ast (2.4.2)
     bindex (0.8.1)
-    bootsnap (1.7.7)
+    bootsnap (1.8.0)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
@@ -265,7 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap (~> 1.7)
+  bootsnap (~> 1.8)
   byebug (~> 11.1)
   capybara (~> 3.35)
   email_spec (~> 2.2)
