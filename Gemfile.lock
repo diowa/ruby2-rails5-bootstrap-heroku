@@ -106,7 +106,7 @@ GEM
     msgpack (1.4.5)
     newrelic_rpm (8.6.0)
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.22.1)
