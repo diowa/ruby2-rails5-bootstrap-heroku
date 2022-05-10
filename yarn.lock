@@ -1288,10 +1288,10 @@ acorn@^8.5.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.0.tgz#90951fde0f8f09df93549481e5fc141445b791cf"
   integrity sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==
 
-actioncable@^5.2.7:
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.7.tgz#eda2ba19579836d67da2b11c4e927a4200cebb43"
-  integrity sha512-3qH3bpY96NY9Da2EPfXeNzRqSC2Utf7zWSxDlul+O8ljjatsXzlaEy22awiJHpXzE3TKlOBZaOCU9Jmjj8VKog==
+actioncable@^5.2.8:
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.8.tgz#988c23d2d51513a572969348945eb7785eafcd5f"
+  integrity sha512-M/CfC7qDT7tux8B0BNYPek+aCw6OjB78K9l978Ff94U8v6+G9LOVCEnSFg4gxdAboRV8KTy9eTK3Wxbry4SXJA==
 
 adjust-sourcemap-loader@^4.0.0:
   version "4.0.0"
