@@ -6532,10 +6532,10 @@ quick-lru@^4.0.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-rails-ujs@^5.2.7:
-  version "5.2.7"
-  resolved "https://registry.yarnpkg.com/rails-ujs/-/rails-ujs-5.2.7.tgz#b6ef09b26f6e195d48d0e797d3380aedd8bca6d4"
-  integrity sha512-Rk9kMVU5Sgup0no2f+2YoFou9F4ZIgQ1s0t4zOwi0RLmllD8DIUxXMH04wT5l+BHuH6qSfmANSw9EdqB/tkABA==
+rails-ujs@^5.2.8:
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/rails-ujs/-/rails-ujs-5.2.8.tgz#dffc6b7d15f735f523e31be0a30b47264b282623"
+  integrity sha512-qwCTG/7FgRRxQIWJ9vmLF8ucqFVM2Krk+0JWcI5OF485jymGa1Rix8kF5vNHGz/VGUvS2Dhom9PdlsdjMt9Kmg==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
