@@ -18,7 +18,7 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "postcss": "^8.4.13",
-    "rails-ujs": "^5.2.7",
+    "rails-ujs": "^5.2.8",
     "resolve-url-loader": "^5.0.0",
     "turbolinks": "^5.2.0"
   },
