@@ -1,4 +1,6 @@
-import 'bootstrap/js/dist/util'
+/* Copied from the source code of Bootstrap: */
+/* https://github.com/twbs/bootstrap/blob/v4.6.1/js/index.js */
+
 import 'bootstrap/js/dist/alert'
 import 'bootstrap/js/dist/button'
 import 'bootstrap/js/dist/carousel'
@@ -8,4 +10,6 @@ import 'bootstrap/js/dist/modal'
 import 'bootstrap/js/dist/popover'
 import 'bootstrap/js/dist/scrollspy'
 import 'bootstrap/js/dist/tab'
+import 'bootstrap/js/dist/toast'
 import 'bootstrap/js/dist/tooltip'
+import 'bootstrap/js/dist/util'
