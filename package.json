@@ -3,14 +3,14 @@
   "private": true,
   "version": "7.0.0",
   "engines": {
-    "node": ">= 14.0.0 < 17",
+    "node": ">= 14 < 17",
     "yarn": "^1.15.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@rails/webpacker": "^5.4.3",
     "actioncable": "^5.2.8",
     "bootstrap": "^4.6.2",
