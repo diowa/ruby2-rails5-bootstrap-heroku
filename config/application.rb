@@ -37,5 +37,8 @@ module Ruby2Rails5BootstrapHeroku
       g.stylesheets     false
       g.javascripts     false
     end
+
+    # SQL schema is required by Chronomodel
+    config.active_record.schema_format = :sql
   end
 end
