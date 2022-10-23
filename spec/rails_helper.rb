@@ -18,7 +18,7 @@ end
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../config/environment', __dir__)
+require_relative '../config/environment'
 # Prevent database truncation if the environment is production
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
@@ -26,7 +26,6 @@ require 'rspec/rails'
 require 'capybara/rspec'
 require 'webmock/rspec'
 
-Capybara.server = :puma, { Silent: true }
 WebMock.disable_net_connect! allow: %w[localhost 127.0.0.1 *.lvh.me lvh.me]
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
