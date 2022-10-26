@@ -1,5 +1,5 @@
 # Rails 5 Starter App
-[![Build Status](https://travis-ci.org/diowa/ruby2-rails5-bootstrap-heroku.svg?branch=main)](https://travis-ci.org/diowa/ruby2-rails5-bootstrap-heroku)
+[![Build Status](https://github.com/diowa/ruby2-rails5-bootstrap-heroku/actions/workflows/ci.yml/badge.svg)](https://github.com/diowa/ruby2-rails5-bootstrap-heroku/actions)
 [![Code Climate](https://codeclimate.com/github/diowa/ruby2-rails5-bootstrap-heroku/badges/gpa.svg)](https://codeclimate.com/github/diowa/ruby2-rails5-bootstrap-heroku)
 [![Coverage Status](https://coveralls.io/repos/github/diowa/ruby2-rails5-bootstrap-heroku/badge.svg?branch=main)](https://coveralls.io/github/diowa/ruby2-rails5-bootstrap-heroku?branch=main)
 
@@ -7,16 +7,16 @@
 
 This is an opinionated starter web application based on the following technology stack:
 
-* [Ruby 2.6.6][1]
-* [Rails 5.2.5][2]
+* [Ruby 2.6.10][1]
+* [Rails 5.2.8.1][2]
 * [Webpack 4][15]
 * [Yarn][16]
 * [Puma][3]
 * [PostgreSQL][4]
 * [RSpec][5]
-* [Bootstrap 4.6.0][8]
+* [Bootstrap 4.6.2][8]
 * [Autoprefixer][9]
-* [Font Awesome 5.15.3 SVG][10]
+* [Font Awesome 6.2.0 SVG][10]
 * [Slim][11]
 * [RuboCop][12]
 * [RuboCop RSpec][17]

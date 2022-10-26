@@ -3,47 +3,47 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.7'
-gem 'rails', '5.2.5'
+ruby '2.6.10'
+gem 'rails', '5.2.8.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.2'
+gem 'pg', '~> 1.4'
 
 # Use Puma as the app server
-gem 'puma', '~> 5.2'
+gem 'puma', '~> 5.6'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.3'
+gem 'webpacker', '~> 5.4'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '~> 1.7', require: false
+gem 'bootsnap', '~> 1.13', require: false
 
 # Template Engine
-gem 'slim-rails', '~> 3.2'
+gem 'slim-rails', '~> 3.5'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 7.0'
+gem 'newrelic_rpm', '~> 8.11'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 6.1'
-  gem 'faker', '~> 2.17'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker', '~> 2.22'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
-  gem 'rspec-rails', '~> 5.0'
-  gem 'rubocop', '~> 1.13', require: false
-  gem 'rubocop-performance', '~> 1.11', require: false
-  gem 'rubocop-rails', '~> 2.9', require: false
-  gem 'rubocop-rspec', '~> 2.3', require: false
-  gem 'slim_lint', '~> 0.20.2', require: false
+  gem 'rspec-rails', '~> 5.1'
+  gem 'rubocop', '~> 1.37', require: false
+  gem 'rubocop-performance', '~> 1.15', require: false
+  gem 'rubocop-rails', '~> 2.17', require: false
+  gem 'rubocop-rspec', '~> 2.14', require: false
+  gem 'slim_lint', '~> 0.22.1', require: false
 end
 
 group :development do
   # gem 'better_errors', '~> 2.4'
   # gem 'binding_of_caller', '~> 0.7.3'
   # gem 'bullet', '~> 5.6'
-  gem 'listen', '>= 3.0.5', '< 3.6'
+  gem 'listen', '>= 3.0.5', '< 3.8'
   # gem 'meta_request', '~> 0.4.3'
   gem 'spring', '~> 2.1'
   gem 'spring-commands-rspec', '~> 1.0'
@@ -52,16 +52,16 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.35'
-  gem 'coveralls_reborn', '~> 0.21.0', require: false
+  gem 'capybara', '~> 3.36'
   gem 'email_spec', '~> 2.2'
-  gem 'selenium-webdriver', '~> 3.142'
+  gem 'selenium-webdriver', '~> 4.1'
   gem 'simplecov', '~> 0.21.2', require: false
-  gem 'webmock', '~> 3.12', require: false
+  gem 'simplecov-lcov', '~> 0.8.0', require: false
+  gem 'webmock', '~> 3.18', require: false
 end
 
 group :staging, :production do
-  gem 'rack-timeout', '~> 0.6.0'
+  gem 'rack-timeout', '~> 0.6.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
