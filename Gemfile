@@ -22,7 +22,7 @@ gem 'bootsnap', '~> 1.15', require: false
 gem 'slim-rails', '~> 3.5'
 
 # App monitoring
-gem 'newrelic_rpm', '~> 8.13'
+gem 'newrelic_rpm', '~> 8.14'
 
 group :development, :test do
   gem 'byebug', '~> 11.1', platforms: %i[mri mingw x64_mingw]
