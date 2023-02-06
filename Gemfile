@@ -33,7 +33,7 @@ group :development, :test do
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 5.1'
   gem 'rubocop', '~> 1.44', require: false
-  gem 'rubocop-performance', '~> 1.15', require: false
+  gem 'rubocop-performance', '~> 1.16', require: false
   gem 'rubocop-rails', '~> 2.17', require: false
   gem 'rubocop-rspec', '~> 2.18', require: false
   gem 'slim_lint', '~> 0.24.0', require: false
