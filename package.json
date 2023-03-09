@@ -15,7 +15,7 @@
     "actioncable": "^5.2.8",
     "bootstrap": "^4.6.2",
     "exports-loader": "^1.1.1",
-    "jquery": "^3.6.3",
+    "jquery": "^3.6.4",
     "popper.js": "^1.16.1",
     "postcss": "^8.4.21",
     "rails-ujs": "^5.2.8",
