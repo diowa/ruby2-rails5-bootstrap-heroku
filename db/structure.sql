@@ -38,6 +38,103 @@ COMMENT ON EXTENSION btree_gist IS 'support for indexing common datatypes in GiS
 
 
 --
+-- Name: chronomodel_boos_delete(); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.chronomodel_boos_delete() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    DECLARE _now timestamp;
+    BEGIN
+        _now := timezone('UTC', now());
+
+        DELETE FROM history.boos
+        WHERE id = old.id AND validity = tsrange(_now, NULL);
+
+        UPDATE history.boos SET validity = tsrange(lower(validity), _now)
+        WHERE id = old.id AND upper_inf(validity);
+
+        DELETE FROM ONLY temporal.boos
+        WHERE id = old.id;
+
+        RETURN OLD;
+    END;
+
+$$;
+
+
+--
+-- Name: chronomodel_boos_insert(); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.chronomodel_boos_insert() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    BEGIN
+        IF NEW.id IS NULL THEN
+            NEW.id := nextval('temporal.boos_id_seq');
+        END IF;
+
+        INSERT INTO temporal.boos ( id, "name", "goo_id", "created_at", "updated_at" )
+        VALUES ( NEW.id, NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" );
+
+        INSERT INTO history.boos ( id, "name", "goo_id", "created_at", "updated_at", validity )
+        VALUES ( NEW.id, NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
+
+        RETURN NEW;
+    END;
+
+$$;
+
+
+--
+-- Name: chronomodel_boos_update(); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.chronomodel_boos_update() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    DECLARE _now timestamp;
+    DECLARE _hid integer;
+    DECLARE _old record;
+    DECLARE _new record;
+    BEGIN
+        IF OLD IS NOT DISTINCT FROM NEW THEN
+            RETURN NULL;
+        END IF;
+
+        _old := row(OLD."name", OLD."goo_id", OLD."created_at");
+        _new := row(NEW."name", NEW."goo_id", NEW."created_at");
+
+        IF _old IS NOT DISTINCT FROM _new THEN
+            UPDATE ONLY temporal.boos SET ( "name", "goo_id", "created_at", "updated_at" ) = ( NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+            RETURN NEW;
+        END IF;
+
+        _now := timezone('UTC', now());
+        _hid := NULL;
+
+        SELECT hid INTO _hid FROM history.boos WHERE id = OLD.id AND lower(validity) = _now;
+
+        IF _hid IS NOT NULL THEN
+            UPDATE history.boos SET ( "name", "goo_id", "created_at", "updated_at" ) = ( NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
+        ELSE
+            UPDATE history.boos SET validity = tsrange(lower(validity), _now)
+            WHERE id = OLD.id AND upper_inf(validity);
+
+            INSERT INTO history.boos ( id, "name", "goo_id", "created_at", "updated_at", validity )
+                VALUES ( OLD.id, NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
+        END IF;
+
+        UPDATE ONLY temporal.boos SET ( "name", "goo_id", "created_at", "updated_at" ) = ( NEW."name", NEW."goo_id", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+
+        RETURN NEW;
+    END;
+
+$$;
+
+
+--
 -- Name: chronomodel_cities_delete(); Type: FUNCTION; Schema: public; Owner: -
 --
 
@@ -224,6 +321,103 @@ CREATE FUNCTION public.chronomodel_countries_update() RETURNS trigger
         END IF;
 
         UPDATE ONLY temporal.countries SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+
+        RETURN NEW;
+    END;
+
+$$;
+
+
+--
+-- Name: chronomodel_goos_delete(); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.chronomodel_goos_delete() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    DECLARE _now timestamp;
+    BEGIN
+        _now := timezone('UTC', now());
+
+        DELETE FROM history.goos
+        WHERE id = old.id AND validity = tsrange(_now, NULL);
+
+        UPDATE history.goos SET validity = tsrange(lower(validity), _now)
+        WHERE id = old.id AND upper_inf(validity);
+
+        DELETE FROM ONLY temporal.goos
+        WHERE id = old.id;
+
+        RETURN OLD;
+    END;
+
+$$;
+
+
+--
+-- Name: chronomodel_goos_insert(); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.chronomodel_goos_insert() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    BEGIN
+        IF NEW.id IS NULL THEN
+            NEW.id := nextval('temporal.goos_id_seq');
+        END IF;
+
+        INSERT INTO temporal.goos ( id, "name", "created_at", "updated_at" )
+        VALUES ( NEW.id, NEW."name", NEW."created_at", NEW."updated_at" );
+
+        INSERT INTO history.goos ( id, "name", "created_at", "updated_at", validity )
+        VALUES ( NEW.id, NEW."name", NEW."created_at", NEW."updated_at", tsrange(timezone('UTC', now()), NULL) );
+
+        RETURN NEW;
+    END;
+
+$$;
+
+
+--
+-- Name: chronomodel_goos_update(); Type: FUNCTION; Schema: public; Owner: -
+--
+
+CREATE FUNCTION public.chronomodel_goos_update() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    DECLARE _now timestamp;
+    DECLARE _hid integer;
+    DECLARE _old record;
+    DECLARE _new record;
+    BEGIN
+        IF OLD IS NOT DISTINCT FROM NEW THEN
+            RETURN NULL;
+        END IF;
+
+        _old := row(OLD."name", OLD."created_at");
+        _new := row(NEW."name", NEW."created_at");
+
+        IF _old IS NOT DISTINCT FROM _new THEN
+            UPDATE ONLY temporal.goos SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
+            RETURN NEW;
+        END IF;
+
+        _now := timezone('UTC', now());
+        _hid := NULL;
+
+        SELECT hid INTO _hid FROM history.goos WHERE id = OLD.id AND lower(validity) = _now;
+
+        IF _hid IS NOT NULL THEN
+            UPDATE history.goos SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE hid = _hid;
+        ELSE
+            UPDATE history.goos SET validity = tsrange(lower(validity), _now)
+            WHERE id = OLD.id AND upper_inf(validity);
+
+            INSERT INTO history.goos ( id, "name", "created_at", "updated_at", validity )
+                VALUES ( OLD.id, NEW."name", NEW."created_at", NEW."updated_at", tsrange(_now, NULL) );
+        END IF;
+
+        UPDATE ONLY temporal.goos SET ( "name", "created_at", "updated_at" ) = ( NEW."name", NEW."created_at", NEW."updated_at" ) WHERE id = OLD.id;
 
         RETURN NEW;
     END;
@@ -430,6 +624,50 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- Name: boos; Type: TABLE; Schema: temporal; Owner: -
+--
+
+CREATE TABLE temporal.boos (
+    id bigint NOT NULL,
+    name character varying NOT NULL,
+    goo_id bigint,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: boos; Type: TABLE; Schema: history; Owner: -
+--
+
+CREATE TABLE history.boos (
+    hid bigint NOT NULL,
+    validity tsrange NOT NULL,
+    recorded_at timestamp without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL
+)
+INHERITS (temporal.boos);
+
+
+--
+-- Name: boos_hid_seq; Type: SEQUENCE; Schema: history; Owner: -
+--
+
+CREATE SEQUENCE history.boos_hid_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: boos_hid_seq; Type: SEQUENCE OWNED BY; Schema: history; Owner: -
+--
+
+ALTER SEQUENCE history.boos_hid_seq OWNED BY history.boos.hid;
+
+
+--
 -- Name: cities; Type: TABLE; Schema: temporal; Owner: -
 --
 
@@ -514,6 +752,49 @@ CREATE SEQUENCE history.countries_hid_seq
 --
 
 ALTER SEQUENCE history.countries_hid_seq OWNED BY history.countries.hid;
+
+
+--
+-- Name: goos; Type: TABLE; Schema: temporal; Owner: -
+--
+
+CREATE TABLE temporal.goos (
+    id bigint NOT NULL,
+    name character varying NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: goos; Type: TABLE; Schema: history; Owner: -
+--
+
+CREATE TABLE history.goos (
+    hid bigint NOT NULL,
+    validity tsrange NOT NULL,
+    recorded_at timestamp without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL
+)
+INHERITS (temporal.goos);
+
+
+--
+-- Name: goos_hid_seq; Type: SEQUENCE; Schema: history; Owner: -
+--
+
+CREATE SEQUENCE history.goos_hid_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: goos_hid_seq; Type: SEQUENCE OWNED BY; Schema: history; Owner: -
+--
+
+ALTER SEQUENCE history.goos_hid_seq OWNED BY history.goos.hid;
 
 
 --
@@ -617,6 +898,26 @@ CREATE TABLE public.ar_internal_metadata (
 
 
 --
+-- Name: boos; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW public.boos AS
+ SELECT boos.id,
+    boos.name,
+    boos.goo_id,
+    boos.created_at,
+    boos.updated_at
+   FROM ONLY temporal.boos;
+
+
+--
+-- Name: VIEW boos; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON VIEW public.boos IS '{"temporal":true,"chronomodel":"1.2.2"}';
+
+
+--
 -- Name: cities; Type: VIEW; Schema: public; Owner: -
 --
 
@@ -653,6 +954,25 @@ CREATE VIEW public.countries AS
 --
 
 COMMENT ON VIEW public.countries IS '{"temporal":true,"chronomodel":"1.2.2"}';
+
+
+--
+-- Name: goos; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW public.goos AS
+ SELECT goos.id,
+    goos.name,
+    goos.created_at,
+    goos.updated_at
+   FROM ONLY temporal.goos;
+
+
+--
+-- Name: VIEW goos; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON VIEW public.goos IS '{"temporal":true,"chronomodel":"1.2.2"}';
 
 
 --
@@ -705,6 +1025,25 @@ COMMENT ON VIEW public.students IS '{"temporal":true,"chronomodel":"1.2.2"}';
 
 
 --
+-- Name: boos_id_seq; Type: SEQUENCE; Schema: temporal; Owner: -
+--
+
+CREATE SEQUENCE temporal.boos_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: boos_id_seq; Type: SEQUENCE OWNED BY; Schema: temporal; Owner: -
+--
+
+ALTER SEQUENCE temporal.boos_id_seq OWNED BY temporal.boos.id;
+
+
+--
 -- Name: cities_id_seq; Type: SEQUENCE; Schema: temporal; Owner: -
 --
 
@@ -740,6 +1079,25 @@ CREATE SEQUENCE temporal.countries_id_seq
 --
 
 ALTER SEQUENCE temporal.countries_id_seq OWNED BY temporal.countries.id;
+
+
+--
+-- Name: goos_id_seq; Type: SEQUENCE; Schema: temporal; Owner: -
+--
+
+CREATE SEQUENCE temporal.goos_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: goos_id_seq; Type: SEQUENCE OWNED BY; Schema: temporal; Owner: -
+--
+
+ALTER SEQUENCE temporal.goos_id_seq OWNED BY temporal.goos.id;
 
 
 --
@@ -781,6 +1139,20 @@ ALTER SEQUENCE temporal.students_id_seq OWNED BY temporal.students.id;
 
 
 --
+-- Name: boos id; Type: DEFAULT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.boos ALTER COLUMN id SET DEFAULT nextval('temporal.boos_id_seq'::regclass);
+
+
+--
+-- Name: boos hid; Type: DEFAULT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.boos ALTER COLUMN hid SET DEFAULT nextval('history.boos_hid_seq'::regclass);
+
+
+--
 -- Name: cities id; Type: DEFAULT; Schema: history; Owner: -
 --
 
@@ -806,6 +1178,20 @@ ALTER TABLE ONLY history.countries ALTER COLUMN id SET DEFAULT nextval('temporal
 --
 
 ALTER TABLE ONLY history.countries ALTER COLUMN hid SET DEFAULT nextval('history.countries_hid_seq'::regclass);
+
+
+--
+-- Name: goos id; Type: DEFAULT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.goos ALTER COLUMN id SET DEFAULT nextval('temporal.goos_id_seq'::regclass);
+
+
+--
+-- Name: goos hid; Type: DEFAULT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.goos ALTER COLUMN hid SET DEFAULT nextval('history.goos_hid_seq'::regclass);
 
 
 --
@@ -837,6 +1223,13 @@ ALTER TABLE ONLY history.students ALTER COLUMN hid SET DEFAULT nextval('history.
 
 
 --
+-- Name: boos id; Type: DEFAULT; Schema: temporal; Owner: -
+--
+
+ALTER TABLE ONLY temporal.boos ALTER COLUMN id SET DEFAULT nextval('temporal.boos_id_seq'::regclass);
+
+
+--
 -- Name: cities id; Type: DEFAULT; Schema: temporal; Owner: -
 --
 
@@ -851,6 +1244,13 @@ ALTER TABLE ONLY temporal.countries ALTER COLUMN id SET DEFAULT nextval('tempora
 
 
 --
+-- Name: goos id; Type: DEFAULT; Schema: temporal; Owner: -
+--
+
+ALTER TABLE ONLY temporal.goos ALTER COLUMN id SET DEFAULT nextval('temporal.goos_id_seq'::regclass);
+
+
+--
 -- Name: schools id; Type: DEFAULT; Schema: temporal; Owner: -
 --
 
@@ -862,6 +1262,22 @@ ALTER TABLE ONLY temporal.schools ALTER COLUMN id SET DEFAULT nextval('temporal.
 --
 
 ALTER TABLE ONLY temporal.students ALTER COLUMN id SET DEFAULT nextval('temporal.students_id_seq'::regclass);
+
+
+--
+-- Name: boos boos_pkey; Type: CONSTRAINT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.boos
+    ADD CONSTRAINT boos_pkey PRIMARY KEY (hid);
+
+
+--
+-- Name: boos boos_timeline_consistency; Type: CONSTRAINT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.boos
+    ADD CONSTRAINT boos_timeline_consistency EXCLUDE USING gist (id WITH =, validity WITH &&);
 
 
 --
@@ -894,6 +1310,22 @@ ALTER TABLE ONLY history.countries
 
 ALTER TABLE ONLY history.countries
     ADD CONSTRAINT countries_timeline_consistency EXCLUDE USING gist (id WITH =, validity WITH &&);
+
+
+--
+-- Name: goos goos_pkey; Type: CONSTRAINT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.goos
+    ADD CONSTRAINT goos_pkey PRIMARY KEY (hid);
+
+
+--
+-- Name: goos goos_timeline_consistency; Type: CONSTRAINT; Schema: history; Owner: -
+--
+
+ALTER TABLE ONLY history.goos
+    ADD CONSTRAINT goos_timeline_consistency EXCLUDE USING gist (id WITH =, validity WITH &&);
 
 
 --
@@ -945,6 +1377,14 @@ ALTER TABLE ONLY public.schema_migrations
 
 
 --
+-- Name: boos boos_pkey; Type: CONSTRAINT; Schema: temporal; Owner: -
+--
+
+ALTER TABLE ONLY temporal.boos
+    ADD CONSTRAINT boos_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: cities cities_pkey; Type: CONSTRAINT; Schema: temporal; Owner: -
 --
 
@@ -961,6 +1401,14 @@ ALTER TABLE ONLY temporal.countries
 
 
 --
+-- Name: goos goos_pkey; Type: CONSTRAINT; Schema: temporal; Owner: -
+--
+
+ALTER TABLE ONLY temporal.goos
+    ADD CONSTRAINT goos_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: schools schools_pkey; Type: CONSTRAINT; Schema: temporal; Owner: -
 --
 
@@ -974,6 +1422,27 @@ ALTER TABLE ONLY temporal.schools
 
 ALTER TABLE ONLY temporal.students
     ADD CONSTRAINT students_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: boos_inherit_pkey; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX boos_inherit_pkey ON history.boos USING btree (id);
+
+
+--
+-- Name: boos_instance_history; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX boos_instance_history ON history.boos USING btree (id, recorded_at);
+
+
+--
+-- Name: boos_recorded_at; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX boos_recorded_at ON history.boos USING btree (recorded_at);
 
 
 --
@@ -1019,6 +1488,48 @@ CREATE INDEX countries_recorded_at ON history.countries USING btree (recorded_at
 
 
 --
+-- Name: goos_inherit_pkey; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX goos_inherit_pkey ON history.goos USING btree (id);
+
+
+--
+-- Name: goos_instance_history; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX goos_instance_history ON history.goos USING btree (id, recorded_at);
+
+
+--
+-- Name: goos_recorded_at; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX goos_recorded_at ON history.goos USING btree (recorded_at);
+
+
+--
+-- Name: index_boos_temporal_on_lower_validity; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX index_boos_temporal_on_lower_validity ON history.boos USING btree (lower(validity));
+
+
+--
+-- Name: index_boos_temporal_on_upper_validity; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX index_boos_temporal_on_upper_validity ON history.boos USING btree (upper(validity));
+
+
+--
+-- Name: index_boos_temporal_on_validity; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX index_boos_temporal_on_validity ON history.boos USING gist (validity);
+
+
+--
 -- Name: index_cities_temporal_on_lower_validity; Type: INDEX; Schema: history; Owner: -
 --
 
@@ -1058,6 +1569,27 @@ CREATE INDEX index_countries_temporal_on_upper_validity ON history.countries USI
 --
 
 CREATE INDEX index_countries_temporal_on_validity ON history.countries USING gist (validity);
+
+
+--
+-- Name: index_goos_temporal_on_lower_validity; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX index_goos_temporal_on_lower_validity ON history.goos USING btree (lower(validity));
+
+
+--
+-- Name: index_goos_temporal_on_upper_validity; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX index_goos_temporal_on_upper_validity ON history.goos USING btree (upper(validity));
+
+
+--
+-- Name: index_goos_temporal_on_validity; Type: INDEX; Schema: history; Owner: -
+--
+
+CREATE INDEX index_goos_temporal_on_validity ON history.goos USING gist (validity);
 
 
 --
@@ -1145,6 +1677,13 @@ CREATE INDEX students_recorded_at ON history.students USING btree (recorded_at);
 
 
 --
+-- Name: index_boos_on_goo_id; Type: INDEX; Schema: temporal; Owner: -
+--
+
+CREATE INDEX index_boos_on_goo_id ON temporal.boos USING btree (goo_id);
+
+
+--
 -- Name: index_cities_on_country_id; Type: INDEX; Schema: temporal; Owner: -
 --
 
@@ -1166,6 +1705,13 @@ CREATE INDEX index_students_on_school_id ON temporal.students USING btree (schoo
 
 
 --
+-- Name: boos chronomodel_delete; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER chronomodel_delete INSTEAD OF DELETE ON public.boos FOR EACH ROW EXECUTE FUNCTION public.chronomodel_boos_delete();
+
+
+--
 -- Name: cities chronomodel_delete; Type: TRIGGER; Schema: public; Owner: -
 --
 
@@ -1177,6 +1723,13 @@ CREATE TRIGGER chronomodel_delete INSTEAD OF DELETE ON public.cities FOR EACH RO
 --
 
 CREATE TRIGGER chronomodel_delete INSTEAD OF DELETE ON public.countries FOR EACH ROW EXECUTE FUNCTION public.chronomodel_countries_delete();
+
+
+--
+-- Name: goos chronomodel_delete; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER chronomodel_delete INSTEAD OF DELETE ON public.goos FOR EACH ROW EXECUTE FUNCTION public.chronomodel_goos_delete();
 
 
 --
@@ -1194,6 +1747,13 @@ CREATE TRIGGER chronomodel_delete INSTEAD OF DELETE ON public.students FOR EACH 
 
 
 --
+-- Name: boos chronomodel_insert; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER chronomodel_insert INSTEAD OF INSERT ON public.boos FOR EACH ROW EXECUTE FUNCTION public.chronomodel_boos_insert();
+
+
+--
 -- Name: cities chronomodel_insert; Type: TRIGGER; Schema: public; Owner: -
 --
 
@@ -1205,6 +1765,13 @@ CREATE TRIGGER chronomodel_insert INSTEAD OF INSERT ON public.cities FOR EACH RO
 --
 
 CREATE TRIGGER chronomodel_insert INSTEAD OF INSERT ON public.countries FOR EACH ROW EXECUTE FUNCTION public.chronomodel_countries_insert();
+
+
+--
+-- Name: goos chronomodel_insert; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER chronomodel_insert INSTEAD OF INSERT ON public.goos FOR EACH ROW EXECUTE FUNCTION public.chronomodel_goos_insert();
 
 
 --
@@ -1222,6 +1789,13 @@ CREATE TRIGGER chronomodel_insert INSTEAD OF INSERT ON public.students FOR EACH 
 
 
 --
+-- Name: boos chronomodel_update; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER chronomodel_update INSTEAD OF UPDATE ON public.boos FOR EACH ROW EXECUTE FUNCTION public.chronomodel_boos_update();
+
+
+--
 -- Name: cities chronomodel_update; Type: TRIGGER; Schema: public; Owner: -
 --
 
@@ -1233,6 +1807,13 @@ CREATE TRIGGER chronomodel_update INSTEAD OF UPDATE ON public.cities FOR EACH RO
 --
 
 CREATE TRIGGER chronomodel_update INSTEAD OF UPDATE ON public.countries FOR EACH ROW EXECUTE FUNCTION public.chronomodel_countries_update();
+
+
+--
+-- Name: goos chronomodel_update; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER chronomodel_update INSTEAD OF UPDATE ON public.goos FOR EACH ROW EXECUTE FUNCTION public.chronomodel_goos_update();
 
 
 --
@@ -1257,6 +1838,7 @@ SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
 ('20210112191552'),
-('20220519102012');
+('20220519102012'),
+('20230320163421');
 
 
