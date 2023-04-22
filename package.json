@@ -3,12 +3,12 @@
   "private": true,
   "version": "7.0.0",
   "engines": {
-    "node": ">= 14 < 17",
+    "node": ">= 14",
     "yarn": "^1.15.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@rails/webpacker": "^5.4.4",
