@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.10'
-gem 'rails', '5.2.8.1'
+gem 'rails', '7.0.4.3'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.4.6'
@@ -31,7 +31,7 @@ group :development, :test do
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
-  gem 'rspec-rails', '~> 5.1'
+  gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', '~> 1.50', require: false
   gem 'rubocop-performance', '~> 1.17', require: false
   gem 'rubocop-rails', '~> 2.19', require: false
