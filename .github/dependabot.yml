@@ -1,28 +1,27 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "04:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: rails
-    versions:
-    - ">= 6.a, < 7"
-  - dependency-name: rubocop-performance
-    versions:
-    - 1.10.1
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "04:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: webpack-cli
-    versions:
-    - ">= 4.a, < 5"
-  - dependency-name: "@fortawesome/free-solid-svg-icons"
-    versions:
-    - 5.15.3
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: rails
+        versions:
+        - ">= 6.a, < 7"
+      - dependency-name: rubocop-performance
+        versions:
+        - 1.10.1
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: webpack-cli
+        versions:
+        - ">= 4.a, < 5"
