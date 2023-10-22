@@ -300,7 +300,7 @@ DEPENDENCIES
   pry (~> 0.13.1)
   pry-byebug (~> 3.9)
   pry-rails (~> 0.3.9)
-  puma (~> 6.3)
+  puma (~> 6.4)
   rack-timeout (~> 0.6.3)
   rails (= 5.2.8.1)
   rspec-rails (~> 5.1)
