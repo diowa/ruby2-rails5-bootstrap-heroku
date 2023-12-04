@@ -1,27 +1,50 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: weekly
+      time: "04:00"
   - package-ecosystem: bundler
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: weekly
+      time: "04:00"
     open-pull-requests-limit: 10
     ignore:
       - dependency-name: rails
         versions:
-        - ">= 6.a, < 7"
-      - dependency-name: rubocop-performance
-        versions:
-        - 1.10.1
+        - ">= 6"
+    groups:
+      rubocop:
+        patterns:
+          - "rubocop*"
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: weekly
+      time: "04:00"
     open-pull-requests-limit: 10
     ignore:
+      - dependency-name: bootstrap
+        versions:
+        - ">= 5"
+      - dependency-name: webpack
+        versions:
+        - ">= 5"
       - dependency-name: webpack-cli
         versions:
-        - ">= 4.a, < 5"
+        - ">= 4"
+    groups:
+      babel:
+        patterns:
+          - "@babel/*"
+      fontawesome:
+        patterns:
+          - "@fortawesome/*"
+      rails:
+        patterns:
+          - "@rails/*"
+      webpack:
+        patterns:
+          - "webpack*"
