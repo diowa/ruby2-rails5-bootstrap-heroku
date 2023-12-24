@@ -42,7 +42,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     arel (9.0.0)
     ast (2.4.2)
@@ -85,11 +85,11 @@ GEM
     ffi (1.16.3)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    hashdiff (1.0.1)
+    hashdiff (1.1.0)
     htmlentities (4.3.4)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    json (2.7.0)
+    json (2.7.1)
     launchy (2.5.2)
       addressable (~> 2.8)
     listen (3.8.0)
@@ -125,7 +125,7 @@ GEM
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    parallel (1.23.0)
+    parallel (1.24.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
       racc
@@ -327,4 +327,4 @@ RUBY VERSION
    ruby 2.6.10p210
 
 BUNDLED WITH
-   2.4.22
+   2.4.21
