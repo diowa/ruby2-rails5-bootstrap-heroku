@@ -12,9 +12,18 @@ updates:
       time: "04:00"
     open-pull-requests-limit: 10
     ignore:
+      - dependency-name: pry-byebug
+        versions:
+        - ">= 3.10"
       - dependency-name: rails
         versions:
         - ">= 6"
+      - dependency-name: spring
+        versions:
+        - ">= 2.2"
+      - dependency-name: spring-watcher-listen
+        versions:
+        - ">= 2.1"
     groups:
       rubocop:
         patterns:
@@ -33,6 +42,9 @@ updates:
         versions:
         - ">= 5"
       - dependency-name: webpack-cli
+        versions:
+        - ">= 4"
+      - dependency-name: webpack-dev-server
         versions:
         - ">= 4"
     groups:
