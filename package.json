@@ -17,7 +17,7 @@
     "@rails/webpacker": "^5.4.4",
     "actioncable": "^5.2.8",
     "bootstrap": "^4.6.2",
-    "exports-loader": "^1.1.1",
+    "exports-loader": "^5.0.0",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
     "postcss": "^8.5.6",
