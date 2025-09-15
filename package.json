@@ -37,6 +37,9 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.3"
   },
+  "resolutions": {
+    "minimatch": "^9.0.5"
+  },
   "standard": {
     "ignore": [
       "/*.js",
