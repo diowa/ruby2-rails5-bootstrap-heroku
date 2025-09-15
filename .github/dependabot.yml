@@ -35,9 +35,30 @@ updates:
       time: "04:00"
     open-pull-requests-limit: 10
     ignore:
+      - dependency-name: exports-loader
+        versions:
+        - ">= 2"
       - dependency-name: bootstrap
         versions:
         - ">= 5"
+      - dependency-name: minimatch
+        versions:
+        - ">= 10"
+      - dependency-name: stylelint
+        versions:
+        - ">= 16"
+      - dependency-name: stylelint-config-twbs-bootstrap
+        versions:
+        - ">= 13"
+      - dependency-name: stylelint-order
+        versions:
+        - ">= 7"
+      - dependency-name: stylelint-scss
+        versions:
+        - ">= 6"
+      - dependency-name: stylelint-webpack-plugin
+        versions:
+        - ">= 3"
       - dependency-name: webpack
         versions:
         - ">= 5"

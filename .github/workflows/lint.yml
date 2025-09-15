@@ -21,6 +21,7 @@ jobs:
       with:
         ruby-version: '2.6.10'
         bundler-cache: true
+        rubygems: latest
     - name: Set up Node
       uses: actions/setup-node@v5
       with:
