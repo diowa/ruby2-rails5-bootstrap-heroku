@@ -19,8 +19,9 @@
     "bootstrap": "^4.6.2",
     "exports-loader": "^1.1.1",
     "jquery": "^3.7.1",
+    "minimatch": "^9.0.5",
     "popper.js": "^1.16.1",
-    "postcss": "^8.5.14",
+    "postcss": "^8.5.15",
     "rails-ujs": "^5.2.8",
     "resolve-url-loader": "^5.0.0",
     "turbolinks": "^5.2.0"
@@ -38,7 +39,9 @@
     "webpack-dev-server": "^3.11.3"
   },
   "resolutions": {
-    "minimatch": "^9.0.5"
+    "minimatch": "^9.0.5",
+    "node-releases": "^1.1.77",
+    "sass": "~1.99.0"
   },
   "standard": {
     "ignore": [
