@@ -38,7 +38,7 @@ jobs:
           --health-retries 5
 
     steps:
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
     - uses: nanasess/setup-chromedriver@v3.0.0
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1.310.0
