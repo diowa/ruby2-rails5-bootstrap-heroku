@@ -21,7 +21,7 @@
     "jquery": "^3.7.1",
     "minimatch": "^9.0.5",
     "popper.js": "^1.16.1",
-    "postcss": "^8.5.16",
+    "postcss": "^8.5.19",
     "rails-ujs": "^5.2.8",
     "resolve-url-loader": "^5.0.0",
     "turbolinks": "^5.2.0"
