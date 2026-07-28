@@ -64,7 +64,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     coderay (1.1.3)
-    concurrent-ruby (1.3.7)
+    concurrent-ruby (1.3.8)
     crack (1.0.1)
       bigdecimal
       rexml
@@ -98,7 +98,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
-    loofah (2.25.1)
+    loofah (2.25.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.9.1)
@@ -113,7 +113,7 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
     minitest (5.25.4)
-    msgpack (1.8.3)
+    msgpack (1.8.4)
     net-imap (0.3.10)
       date
       net-protocol
@@ -129,7 +129,7 @@ GEM
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.24.0)
-    parser (3.3.11.1)
+    parser (3.3.12.0)
       ast (~> 2.4.1)
       racc
     pg (1.4.6)
@@ -238,7 +238,7 @@ GEM
     simplecov-html (0.13.2)
     simplecov-lcov (0.8.0)
     simplecov_json_formatter (0.1.4)
-    slim (5.2.1)
+    slim (5.2.2)
       temple (~> 0.10.0)
       tilt (>= 2.1.0)
     slim-rails (3.7.0)
@@ -265,7 +265,7 @@ GEM
     temple (0.10.4)
     thor (1.5.0)
     thread_safe (0.3.6)
-    tilt (2.7.0)
+    tilt (2.8.0)
     timeout (0.6.1)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)

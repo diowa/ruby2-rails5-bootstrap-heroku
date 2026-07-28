@@ -45,6 +45,9 @@ updates:
       semver-major-days: 15
     open-pull-requests-limit: 10
     ignore:
+      - dependency-name: "@babel/core"
+        versions:
+        - ">= 8"
       - dependency-name: exports-loader
         versions:
         - ">= 2"
