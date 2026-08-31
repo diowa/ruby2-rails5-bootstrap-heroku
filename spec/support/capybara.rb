@@ -1,6 +1,18 @@
 # frozen_string_literal: true
 
 Capybara.register_driver :custom_chrome do |app|
+  # Opt-out for Selenium data collection.
+  #
+  # Note: This is the only available method to disable telemetry at this point.
+  # Configuring the driver here is too late as the manager is already set at
+  # the system level.
+  #
+  # To test that telemetry is not being send, use the command:
+  # `DEBUG=true SE_CLEAR_CACHE=true rspec`
+  #
+  # Ref: SeleniumHQ/selenium#13173
+  ENV['SE_AVOID_STATS'] = 'true'
+
   opts = Selenium::WebDriver::Chrome::Options.new
 
   # See https://github.com/GoogleChrome/chrome-launcher/blob/main/docs/chrome-flags-for-tools.md
@@ -8,15 +20,18 @@ Capybara.register_driver :custom_chrome do |app|
   disabled_features = [
     'Translate',
     'AcceptCHFrame', # crbug.com/1348106
-    'BackForwardCache',
     'MediaRouter',
     'OptimizationHints',
+    'WebUIReloadButton', # https://github.com/puppeteer/puppeteer/pull/14925
+    'WebUIOmniboxPopup', # https://github.com/puppeteer/puppeteer/pull/15278
+    'WebUIOmniboxAimPopup', # https://github.com/puppeteer/puppeteer/pull/15278
+    'DeferRendererTasksAfterInput', # teamcapybara/capybara#2800
     'ProcessPerSiteUpToMainFrameThreshold', # crbug.com/1492053
-    'DeferRendererTasksAfterInput' # teamcapybara/capybara#2800
+    'IsolateSandboxedIframes' # https://github.com/puppeteer/puppeteer/issues/10715
   ]
 
   enabled_features = [
-    'NetworkServiceInProcess2'
+    'PdfOopif'
   ]
 
   opts.add_argument('allow-pre-commit-input')
@@ -26,12 +41,10 @@ Capybara.register_driver :custom_chrome do |app|
   opts.add_argument('disable-breakpad')
   opts.add_argument('disable-client-side-phishing-detection')
   opts.add_argument('disable-component-extensions-with-background-pages')
-  opts.add_argument('disable-component-update')
+  opts.add_argument('disable-crash-reporter') # No crash reporting in CfT
   opts.add_argument('disable-default-apps')
   opts.add_argument('disable-dev-shm-usage')
   opts.add_argument('disable-extensions')
-  opts.add_argument('disable-field-trial-config') # https://source.chromium.org/chromium/chromium/src/+/main:testing/variations/README.md
-  opts.add_argument("disable-features=#{disabled_features.join(',')}")
   opts.add_argument('disable-hang-monitor')
   opts.add_argument('disable-infobars')
   opts.add_argument('disable-ipc-flooding-protection')
@@ -41,19 +54,17 @@ Capybara.register_driver :custom_chrome do |app|
   opts.add_argument('disable-search-engine-choice-screen')
   opts.add_argument('disable-sync')
   opts.add_argument('enable-automation')
-  # TODO(sadym): remove 'enable-blink-features=IdleDetection' once
-  # IdleDetection is turned on by default.
-  opts.add_argument('enable-blink-features=IdleDetection')
-  opts.add_argument("enable-features=#{enabled_features.join(',')}")
   opts.add_argument('export-tagged-pdf')
   opts.add_argument('force-color-profile=srgb')
+  opts.add_argument('generate-pdf-document-outline')
   opts.add_argument('metrics-recording-only')
   opts.add_argument('no-first-run')
   opts.add_argument('password-store=basic')
   opts.add_argument('use-mock-keychain')
 
-  opts.add_argument('no-sandbox')
-  opts.add_argument('disable-gpu')
+  opts.add_argument("disable-features=#{disabled_features.join(',')}")
+  opts.add_argument("enable-features=#{enabled_features.join(',')}")
+
   opts.add_argument('window-size=1024,768')
 
   unless ActiveModel::Type::Boolean::FALSE_VALUES.include?(ENV['HEADLESS'])
