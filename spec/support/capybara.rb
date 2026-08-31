@@ -12,7 +12,7 @@ Capybara.register_driver :custom_chrome do |app|
     'MediaRouter',
     'OptimizationHints',
     'ProcessPerSiteUpToMainFrameThreshold', # crbug.com/1492053
-    'DeferRendererTasksAfterInput', # teamcapybara/capybara#2800
+    'DeferRendererTasksAfterInput' # teamcapybara/capybara#2800
   ]
 
   enabled_features = [
